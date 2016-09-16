@@ -1,0 +1,424 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration:none;
+	color:#999;
+}
+/*显示红色*/
+.coRed{
+	color: red;
+	padding-right: 10px;
+}
+/*每个列表行间距离设置为10px的*/
+li{
+	line-height: 22px;
+}
+/*每个label之间的间距*/
+input,
+label{
+	padding: 0 5px;
+}
+
+
+/*清除浮动*/
+.clearfix::before,
+.clearfix::after{
+	content: "";
+	height: 0;
+	line-height: 0;
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
+
+.clearfix:after{clear:both;} 
+.clearfix{ 
+    *zoom:1;/*IE/7/6*/
+}
+
+/*清除表单样式*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,input,button,textarea,p,th,td{
+	padding:0;margin:0;
+}
+table{
+	border-collapse:collapse;border-spacing:0;
+}
+fieldset,img{
+	border:0;
+}
+a{
+	text-decoration:none;color:#000;outline:none;
+}
+li{
+	list-style:none;
+}
+caption,th{
+	text-align:left;
+}
+input,button,textarea,select,optgroup,option{
+	font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;
+}
+
+input,button,textarea,select{
+	*font-size:100%;
+}
+a{
+	-webkit-transition:all 0.5s linear;-moz-transition:all 0.5s linear;-ms-transition:all 0.5s linear;-o-transition:all 0.5s linear;
+}
+
+/*input输入框、select下拉框变成下划线  */
+input,select{
+	color: #999;
+	border-color: #a0a0a0; 
+    border-style: solid; 
+    border-top-width: 0px;
+    border-right-width: 0px; 
+    border-bottom-width: 1px;
+    border-left-width: 0px;
+}
+/*button的样式设置*/
+button{
+	padding: 3px 10px;
+	margin-left: 10px;
+	background: #a0a0a0;
+	border-radius: 10px;
+	border: #a0a0a0;
+	color:#FFFFFF;
+}
+/*图片按钮去掉下划线*/
+input[type="image"]{
+	border-bottom-width:0px;
+}
+
+body{
+	margin: 0 auto;
+	font-family:"microsoft yahei" ,sans-serif;
+	font-size: 16px;
+}
+
+
+
+/*header开始*/
+#libg {
+	background-color:#FFF;
+	border-bottom-width:0px;
+}
+.table{
+	font-size:12px; width:125px; text-align:left;
+}
+.bj1{
+	height: 30px;
+	margin: 0 auto;
+	background-color: #eeeeee;
+}
+
+.bj1box{
+	width: 1080px;
+	margin: 0 auto;
+}
+.bj1 ul {
+	width: 660px;
+	float: right;
+	height: 30px;
+}
+.bj1nav li {
+	float: right;
+	list-style-type: none;
+	line-height: 30px;
+	width: 80px;
+	padding-right: 25px;
+	position: relative;
+}
+
+.bj1nav li ul{
+	display: none;
+	position: absolute;
+	width: 105px;
+	left: 0;
+}
+.bj1nav li:hover ul{
+	display:block;
+	z-index: 1000;
+}
+.bj1nav li a {
+	display: block;
+}
+.bj1navli a{
+	padding-right: 0;
+}
+.bj1 a:hover{
+	color: #FFFFFF;
+}
+.bj1 p {
+	width: 250px;
+	line-height: 30px;
+	float: left;
+	color: #999;
+	height: 30px;
+}
+.bj2{
+	height: 30px;
+	margin: 0 auto;
+	background-color: #fff79a;
+	color: #999;
+}
+.bj2 p {
+	width: 1050px;
+	margin: 0 auto;
+	line-height: 30px;
+	padding-left: 30px;
+	background: url(../img/99.png) no-repeat center left;
+}
+.bj2 p span{
+	padding: 0 25px;
+}
+
+.bj3{
+	width: 1082px;
+	height: 50px;
+	margin: 0 auto;
+	background-color: #ff6600;
+}
+.bj3 ul {
+}
+.bj3 ul li {
+	float: left;
+	list-style-type: none;
+	line-height: 50px;
+	height: 50px;
+	width: 96px;
+	text-align: center;
+}
+.bj3 ul li a {
+	color: #FFF;
+	font-size: 22px;
+	text-decoration: none;
+	display: block;
+}
+.bj3 ul li a:hover {
+	background-image: url(../img/100.png);
+	background-repeat: no-repeat;
+}
+.bj3 ul li:first-child a{
+	background-image: url(../img/100.png);
+	background-repeat: no-repeat;
+}
+.bj4{
+	height: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #eeeeee;
+}
+.bj4 p {
+	width: 1080px; 
+	margin: 0 auto;
+	line-height:30px;
+}
+.bj4 p span {
+	float: right;
+}
+
+/*正文开始*/
+.content {
+	width: 1080px;
+	border: 1px solid #a0a0a0;
+	border-top: none;
+	margin: 0 auto;
+	color:#A0A0A0;
+}
+
+/*con1开始*/
+.con1{
+	border-bottom: 1px solid #009843;
+}
+.con1_nav{
+	height: 55px;
+	line-height: 55px;
+	padding-left: 18px;
+}
+.con1_nav p{
+	padding-left: 30px;
+	background:url(../img/open.png) no-repeat left center;
+}
+.con1_nav p span{
+	margin-left: 160px;
+	color: #999;
+	font-size: 20px;
+	font-weight: bold;
+}
+.con1_msg{
+	height: 30px;
+	line-height: 30px;
+	padding-left:18px;
+	background: #EEEEEE;
+	
+}
+.con1_msg p{
+	padding-left: 60px;
+	background: url(../img/horn.png) no-repeat left center ;
+}
+.c1one,
+.c1two,
+.c1four,
+.c1five,
+.c1six,
+.c1seven{
+	margin: 10px 16px;
+	padding-left: 25px;
+}
+.c1one{
+	background: url(../img/select.png) left center no-repeat;
+}
+.c1conSpan{
+	margin-left: 50px;
+}
+.c1two{
+	background: url(../img/keylitter.png) left center no-repeat;
+}
+.c1twoSpan{
+	padding-left: 25px;
+	background: url(../img/keylitter.png) no-repeat center left;
+	margin-left: 50px;
+}
+.c1three{
+	margin: 10px 31px;
+	background: #EEEEEE;
+	border-radius: 10px;
+	position: relative;
+	height: 70px;
+}
+.c1three span{
+	margin:0 10px;
+	position: relative;
+	top: 25px;
+}
+.c13Ul1 li,
+.c13Ul2 li{
+	display: inline-block;
+	margin: 0 70px;
+}
+.c13Ul1{
+	margin-left: 50px;
+}
+.c13Ul2{
+	width: 750px;
+	background: #999;
+	height: 2px;
+	margin-left: 100px;
+}
+.c13Ul2 li{
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	background: #999999;
+}
+.c13Ul2 li:first-child{
+	position: absolute;
+	top:39px;
+	left:150px;
+}
+.c13Ul2 li:nth-of-type(2){
+	position: absolute;
+	top:39px;
+	left:360px;
+}
+.c13Ul2 li:nth-of-type(3){
+	position: absolute;
+	top:39px;
+	left:570px;
+}
+.c13Ul2 li:nth-of-type(4){
+	position: absolute;
+	top:39px;
+	left:780px;
+}
+.c1six span{
+	float: left;
+}
+.c16Box{
+	margin: 0 20px;
+	float: left;
+	background: #EEEEEE;
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+.c1seven table tr td{
+	text-align: center;
+}
+/*con2开始*/
+.con2{
+   margin: 5px 0;
+   border-bottom: 1px solid #009843;
+}
+.con2 fieldset{
+	margin-left: 36px;
+}
+.c2one,
+.c2one p,
+.c2two,
+.c2three{
+	padding: 5px 0;
+}
+.c2one span{
+	padding-right: 16px;
+}
+.c2one label{
+	padding-right: 50px;
+}
+.c2two label{
+	padding-right: 66px;
+}
+.c2two label:nth-of-type(2){
+	padding-right: 18px;
+}
+.c23Boxone,
+.c23Boxtwo{
+	padding: 5px 0 5px 40px;
+}
+.c23Boxone li,
+.c23Boxtwo li{
+	display: inline-block;
+}
+.c23Boxtwo li{
+	padding: 0 10px;
+}
+.c23Boxone li{
+	padding: 0 20px;
+}
+.c23Boxtwo li:last-child{
+	padding-left: 200px;
+}
+.c23Boxtwoli{
+	margin-left: 16px;
+}
+/*con3开始*/
+.con3{
+	margin: 5px 0;
+   border-bottom: 1px solid #009843;
+}
+.con3 fieldset{
+	margin-left: 36px;
+}
+.c3one,
+.c3two,
+.c3three,
+.c3four{
+	padding: 5px 0;
+}
+.c3one span{
+	padding-right: 20px;
+}
+.c3one img{
+	padding: 10px 0 5px 80px;
+}
+.con3 textarea{
+	width: 520px;
+	height:50px;
+}
+.con3 span{
+	
+}
