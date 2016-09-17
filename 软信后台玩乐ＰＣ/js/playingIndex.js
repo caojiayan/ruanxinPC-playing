@@ -1,4 +1,34 @@
-
+//con2中删除服务项目
+$(document).ready(function(){
+	$(".c2navli1").click(function(){
+		$(".c2navli1").hide();
+	});
+});
+$(document).ready(function(){
+	$(".c2navli2").click(function(){
+		$(".c2navli2").hide();
+	});
+});
+$(document).ready(function(){
+	$(".c2navli3").click(function(){
+		$(".c2navli3").hide();
+	});
+});
+$(document).ready(function(){
+	$(".c2navli4").click(function(){
+		$(".c2navli4").hide();
+	});
+});
+$(document).ready(function(){
+	$(".c2navli5").click(function(){
+		$(".c2navli5").hide();
+	});
+});
+$(document).ready(function(){
+	$(".c2navli6").click(function(){
+		$(".c2navli6").hide();
+	});
+});
 
 //con4中选择点击上传图片
 function fileSelect() {

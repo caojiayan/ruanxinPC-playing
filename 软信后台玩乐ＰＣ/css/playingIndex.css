@@ -110,6 +110,9 @@ input[type="image"]{
 .letterBlue{
 	color: #66b0fe;
 }
+.letterRed{
+	color: red;
+}
 body{
 	margin: 0 auto;
 	font-family:"microsoft yahei" ,sans-serif;
@@ -295,6 +298,7 @@ body{
 	padding-left: 60px;
 	background: url(../img/horn.png) no-repeat left center ;
 }
+.c1zero,
 .c1one,
 .c1two,
 .c1four,
@@ -390,13 +394,13 @@ body{
 .c2three{
 	padding: 5px 0;
 }
-.c2one span{
+.c2oneSpan{
 	padding-right: 16px;
 }
 .c2one label{
 	padding-right: 50px;
 }
-.c2two label{
+.c2two .c2twoLabel{
 	padding-right: 66px;
 }
 .c2two label:nth-of-type(2){
@@ -422,6 +426,7 @@ body{
 .c23Boxtwoli{
 	margin-left: 16px;
 }
+
 /*con3开始*/
 .c3one,
 .c3two,
@@ -444,7 +449,7 @@ body{
 	margin-left: 150px;
 }
 
-.con3 textarea{
+.con3 .c3Apptex{
 	width: 520px;
 	height:100px;
 	padding: 0 5px;
@@ -574,7 +579,9 @@ body{
 }
 
 .c6one,
-.c6two{
+.c6two,
+.c6three,
+.c6four{
 	padding: 5px 0;
 }
 
