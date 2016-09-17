@@ -8,10 +8,12 @@ a{
 	text-decoration:none;
 	color:#999;
 }
-/*显示红色*/
+/*显示红色背景*/
 .coRed{
-	color: red;
-	padding-right: 10px;
+	color:#FFFFFF;
+	padding:2px 5px;
+	background: red;
+	border-radius: 5px;
 }
 /*每个列表行间距离设置为10px的*/
 li{
@@ -93,13 +95,45 @@ button{
 input[type="image"]{
 	border-bottom-width:0px;
 }
-
+/*”限字“样式*/
+.cSpan{
+	padding: 2px 5px;
+	background: #009843;
+	border-radius: 5px;
+	color: #FFFFFF;
+}
+/*右边25px内边距*/
+.cright{
+	padding-right: 25px;
+}
+/*字体变蓝色*/
+.letterBlue{
+	color: #66b0fe;
+}
 body{
 	margin: 0 auto;
 	font-family:"microsoft yahei" ,sans-serif;
 	font-size: 16px;
 }
-
+.con2,
+.con3,
+.con4,
+.con5,
+.con6,
+.con7,
+.con8{
+   padding: 5px 0;
+   border-bottom: 1px solid #009843;
+}
+.con2 fieldset,
+.con3 fieldset,
+.con4 fieldset,
+.con5 fieldset,
+.con6 fieldset,
+.con7 fieldset,
+.con8 fieldset{
+	margin-left: 36px;
+}
 
 
 /*header开始*/
@@ -350,13 +384,6 @@ body{
 	text-align: center;
 }
 /*con2开始*/
-.con2{
-   margin: 5px 0;
-   border-bottom: 1px solid #009843;
-}
-.con2 fieldset{
-	margin-left: 36px;
-}
 .c2one,
 .c2one p,
 .c2two,
@@ -396,29 +423,227 @@ body{
 	margin-left: 16px;
 }
 /*con3开始*/
-.con3{
-	margin: 5px 0;
-   border-bottom: 1px solid #009843;
-}
-.con3 fieldset{
-	margin-left: 36px;
-}
 .c3one,
 .c3two,
 .c3three,
 .c3four{
 	padding: 5px 0;
 }
-.c3one span{
-	padding-right: 20px;
-}
+
 .c3one img{
-	padding: 10px 0 5px 80px;
+	padding: 10px 30px 0 85px;
 }
+.c3one input{
+	padding-right: 10px;
+}
+.c3two{
+	margin-bottom: 5px;
+}
+
+.c3right{
+	margin-left: 150px;
+}
+
 .con3 textarea{
 	width: 520px;
-	height:50px;
+	height:100px;
+	padding: 0 5px;
+	margin: 10px 0 0 90px;
 }
-.con3 span{
-	
+/*con4开始*/
+.c4one,
+.c4two,
+.c4three{
+	padding: 5px 0;
+}
+.c4left{
+	position: relative;
+	top: -90px;
+	left: 0;
+}
+.c4three .normalFace{
+	padding: 0 50px 0 10px;
+}
+/*点击上传图片*/
+#fileToUpload{
+	display: none ;
+}
+/*con5开始*/
+.con5{
+	position: relative;
+}
+
+.cx1{
+	height: 35px;
+	line-height: 35px;
+	padding-left: 30px;
+	background: url(../img/money.png) left center no-repeat;
+}
+.cx1 form {
+	float: left;
+}
+.cx1 form p{
+	float: left;
+	padding-right: 20px;
+}
+
+.cx1 form label{
+	padding-right: 15px;
+}
+
+.cx2{
+	width: 950px;
+	padding: 10px 10px 10px 15px;
+	margin: 0 auto;
+	background: #EEEEEE;
+	border-radius: 10px;
+	display: none;
+}
+
+.cx2 form fieldset:first-child input,
+.cx2 form fieldset:nth-of-type(2) input{
+	border-color: #878787; 
+    border-style: solid; 
+    border-width:1px;
+}
+
+.cx2 form fieldset{
+	padding-bottom: 10px;
+}
+.cx2 form fieldset:last-child{
+	padding-bottom: 0;
+}
+.cx2Lspan{
+	padding-right: 25px;
+}
+.cx2Rspan{
+	margin-left: 25px;
+}
+
+.cx2Lspan input{
+	width: 70px;
+	margin-left: 25px;
+}
+.cx2Rspan input{
+	width: 35px;
+}
+.cx2Fieinput input[type=text]{
+	width: 65px;
+}
+
+
+.cx3 fieldset h4{
+	font-size: 16px;
+	padding-top: 10px;
+}
+
+.cx3 .cx3_in{
+	border-bottom: 1px solid #EEEEEE;
+	padding-top:10px;
+}
+.cx3Inspan{
+	margin-right: 25px;
+	padding-left:0 !important;
+}
+.cx3 .cx3_in span{
+	padding-left:20%;
+}
+
+.cx3 .cx3_in:nth-of-type(6) input,
+.cx3 .cx3_do input{
+	width: 30px;
+}
+.cx3 .cx3_in:nth-of-type(3),
+.cx3 .cx3_in:nth-of-type(6){
+	padding-left: 42px;
+}
+
+.cx3 .cx3_in:nth-of-type(3) span{
+	padding-right: 20px;
+}
+
+.cx3 .cx3_on{
+	padding-top :10px;
+}
+.cx3 .cx3_do{
+	padding-top:10px;
+}
+/*con6开始*/
+.con6{
+    position: relative;
+}
+
+.c6one,
+.c6two{
+	padding: 5px 0;
+}
+
+.c6one ul{
+	margin-left: 96px;
+}
+.c6one ul li{
+	display: inline-block;
+	padding: 5px 0;
+}
+.c6Span{
+	position: absolute;
+	top: 10px;
+	left: 36px;
+}
+.c6Price{
+	padding-right: 5px;
+}
+/*con7开始*/
+.c7one,
+.c7two,
+.c7three{
+	padding: 5px 0;
+}
+.c7three .cright,
+.c7three img ,
+.c7 .c7left{
+	float: left;
+}
+
+.c7three img{
+	padding-right: 110px;
+}
+.c7right{
+	padding-left: 110px;
+}
+/*con8开始*/
+.c8one,
+.c8two,
+.c8three,
+.c8four,
+.c8five{
+	padding: 5px 0;
+}
+
+.c8four p{
+	margin-left: 105px;
+}
+.c8five {
+	margin: 20px 150px;
+}
+
+.c8five li{
+	padding: 8px 40px;
+	margin-right: 50px;
+	border-radius: 5px;
+	background: #c9c9c9;
+	display: inline-block;
+}
+.c8five li a{
+	color: #FFFFFF;
+	font-weight: 900;
+	font-size: 20px;
+}
+.c8five li:nth-of-type(2){
+	background: #999;
+	margin:0 60px;
+}
+.c8five li:nth-of-type(3){
+	background: #009946;
+	margin-left:60px;
 }
