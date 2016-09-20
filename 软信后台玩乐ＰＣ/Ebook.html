@@ -80,7 +80,7 @@
 			    <p>软信商家发布“全新实物类商品”的有关规定和说明</p>
 		        </div>
 		        <form>
-		        	<fieldset class="c1zero">
+		        <fieldset class="c1zero">
 		        	<span class="cright">分类选择</span>
 		        	<label><input name="分类选择" type="radio" value="" />书籍</label>
 		        	<label><input name="分类选择" type="radio" value="" />报纸</label>
@@ -182,39 +182,40 @@
 		    			           第<input type="text" value="16" onfocus="javascript:if(this.value=='16')this.value='';"/>回
 		    			</span>
 		    			<span class="cright">
-		    				<input type="image" src="img/upload.png" />
+		    				<a href="#"><img class="normalFace" src="img/upload.png" onclick="fileSelect();"></a>
+	    			        <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
 		    				点我上传
 		    			</span>
 		    		</fieldset>
 		    		<fieldset class="c3EookBox">
-		    			<ul>
+		    			<ul class="playingDeleteUl1">
 		    				<li>文件名：三国演义-第15回.txt</li>
 		    				<li>大小：1.56M</li>
 		    				<li>太史慈酣斗小霸王  孙伯符大战严白虎</li>
 		    				<li>
-		    					<img src="img/Ebook.png">
-		    					<img src="img/trash.png">
-		    					<img src="img/Refresh.png">
+		    					<a href="#"><img src="img/Ebook.png"></a>
+		    					<a href="#"><img src="img/trash.png" class="playingDeleteimg1"></a>
+		    					<a href="#"><img src="img/Refresh.png"></a>
 		    			    </li>
 		    			</ul>
-		    			<ul>
+		    			<ul class="playingDeleteUl2">
 		    				<li>文件名：三国演义-第15回.txt</li>
 		    				<li>大小：1.56M</li>
 		    				<li>太史慈酣斗小霸王  孙伯符大战严白虎</li>
 		    				<li>
-		    					<img src="img/Ebook.png">
-		    					<img src="img/trash.png">
-		    					<img src="img/Refresh.png">
+		    					<a href="#"><img src="img/Ebook.png"></a>
+		    					<a href="#"><img src="img/trash.png" class="playingDeleteimg2"></a>
+		    					<a href="#"><img src="img/Refresh.png"></a>
 		    			    </li>
 		    			</ul>
-		    			<ul>
+		    			<ul class="playingDeleteUl3">
 		    				<li>文件名：三国演义-第15回.txt</li>
 		    				<li>大小：1.56M</li>
 		    				<li>太史慈酣斗小霸王  孙伯符大战严白虎</li>
 		    				<li>
-		    					<img src="img/Ebook.png">
-		    					<img src="img/trash.png">
-		    					<img src="img/Refresh.png">
+		    					<a href="#"><img src="img/Ebook.png"></a>
+		    					<a href="#"><img src="img/trash.png" class="playingDeleteimg3"></a>
+		    					<a href="#"><img src="img/Refresh.png"></a>
 		    			    </li>
 		    			</ul>
 		    		</fieldset>
@@ -307,8 +308,8 @@
 		    </div>
 		    <!--con4结束-->
 		    <!--con5开始-->
-		    <div class="con5">
-		    	<div class="cx1">
+	        <div class="con5 clearfix">
+		        <div class="cx1">
 			        <form action="" method="">
 				        <p>交易类型</p>
 				        <label><input name="交易类型" type="radio" value="cx1one" id="cx1one" onclick="aCheck1()" checked="checked"/>零售</label> 
@@ -380,7 +381,7 @@
                             <input type="checkbox" checked="checked">每月固定日期
 				        </fieldset>
 				        <fieldset>
-					        <span class="cx2Lspan">定制&nbsp</span>
+					        <span class="cx2Lspan letterSpace">定制</span>
 					        <label><input name="定制" type="radio" value="" />不支持</label> 
                             <label><input name="定制" type="radio" value="" />支持</label>
                             <span class="cx2Rspan">定制方式</span>
@@ -415,7 +416,7 @@
                             <input type="checkbox" checked="checked">每月固定日期
 				        </fieldset>
 				        <fieldset>
-					        <span class="cx2Lspan">定制&nbsp</span>
+					        <span class="cx2Lspan letterSpace">定制</span>
 					        <label><input name="定制" type="radio" value="" />不支持</label> 
                             <label><input name="定制" type="radio" value="" />支持</label>
                             <span class="cx2Rspan">定制方式</span>
@@ -436,7 +437,7 @@
                             <label><input name="定制" type="radio" value="" />不退款</label>
 				        </fieldset>
 				        <fieldset class="cx2Fieinput">
-					        <span class="cx2Lspan">混批&nbsp</span>
+					        <span class="cx2Lspan letterSpace">混批</span>
 					        <label><input name="混批" type="radio" value="" />不支持</label> 
                             <label><input name="混批" type="radio" value="" />支持</label>
                             <span class="cx2Rspan">混批条件</span>
@@ -447,7 +448,7 @@
                             <input type="text" value="输入总金额" onfocus="javascript:if(this.value=='输入总金额')this.value='';"/>元
 				        </fieldset>
 				        <fieldset class="cx2Fieinput">
-					        <span class="cx2Lspan" style="padding-right: 13px;">免费拿样</span>
+					        <span class="cx2Lspan" style="padding-right: 9px;">免费拿样</span>
 					        <label><input name="免费拿样" type="radio" value="" />不支持</label> 
                             <label><input name="免费拿样" type="radio" value="" />支持</label>
                             <span class="cx2Rspan">返钱条件</span> 1笔订单
@@ -472,7 +473,7 @@
 					        </span>
 				        </fieldset>
 				        <fieldset class="cx2Fieinput">
-					        <span class="cx2Lspan">诚信金</span>
+					        <span class="cx2Lspan letterSpace">诚信金</span>
 					        <label>
 						        <input name="诚信金" type="radio" value="" />
 					                                 按比例<input type="text" value="15" onfocus="javascript:if(this.value=='15')this.value='';"/>%
@@ -536,13 +537,13 @@
 				        </fieldset>
 				        <fieldset class="cx2Fieinput">
 					        <span class="cx2Lspan">发货日期</span>
-					        <input type="text" value="2016.9.19" onfocus="javascript:if(this.value=='2016.9.19')this.value='';"/>
+					        <input type="date" />
 					        <span class="cx2Rspan">撤单日期</span>
-					        <input type="text" value="2016.9.16" onfocus="javascript:if(this.value=='2016.9.16')this.value='';"/>
+					        <input type="date" />
 				        </fieldset>
 				        <fieldset class="cx2Fieinput">
 					        <span class="cx2Lspan">余款期限</span>
-					        <input type="text" value="2016.9.15" onfocus="javascript:if(this.value=='2016.9.15')this.value='';"/>
+					        <input type="date" />
 					        <span class="cx2Rspan">未收到余款，则</span>
 					        <label><input name="未收到余款" type="radio" value="" />撤销订单
 					        <label><input name="未收到余款" type="radio" value="" />转为到付
@@ -585,12 +586,13 @@
 				                <input type="checkbox" checked="checked">分段<span>(分段，即先付定金，验收合格后再付尾款）</span>
 			                </div>
 			                <div class="cx3_in">订金占比
-				                <input type="text"  placeholder="35"/>%  若验收失败
+				                <input type="text"  value="35" onfocus="javascript:if(this.value=='35')this.value='';"/>%  
+				                <span class="c5Appleft">若验收失败</span>
 			                    <label><input name="若验收失败" type="radio" value="" />全额退款</label> 
                                 <label><input name="若验收失败" type="radio" value="" />协商解决</label>
 			                </div>
                             <div class="cx3_on">
-                                <span>支持货币</span>
+                                <span class="cright">支持货币</span>
                                 <input type="checkbox" checked="checked">人民币
                                 <input type="checkbox" checked="checked">软信币
                                 <input type="checkbox" checked="checked">美元
@@ -604,7 +606,7 @@
 			                </div>
 			                <div class="cx3_do">
 				                <span>软信币抵扣比例</span>
-				                <input type="text"  value="9" onfocus="javascript:if(this.value=='9')this.value=''/">% <span>提示：最大支持99%，超过50%则销售不计搜索排名，建议设置20%左右（转化率会提升明显）</span>
+				                <input type="text"  value="9" onfocus="javascript:if(this.value=='9')this.value='';"/>% <span class="c5Appleft">提示：最大支持99%，超过50%则销售不计搜索排名，建议设置20%左右（转化率会提升明显）</span>
 			                </div>
 			            </fieldset>
 			        </form>
@@ -644,7 +646,7 @@
 		    				提示（免费试读：不能小于120*5%=6回）
 		    			</span>
 		    		</fieldset>
-		    		<ul class="c8five">
+		    		<ul class="cPlayingend">
 	    				<li><a href="">存为草稿</a></li>
 	    				<li><a href="">放入仓库</a></li>
 	    				<li><a href="">上架销售</a></li>

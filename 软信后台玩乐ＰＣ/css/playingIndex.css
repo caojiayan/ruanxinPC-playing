@@ -91,10 +91,83 @@ button{
 	border: #a0a0a0;
 	color:#FFFFFF;
 }
+/*下拉框样式*/
+.dropdown {
+	display:inline-block;
+	width:120px;
+	height:20px;
+	border:1px solid #a0a0a0;
+	position:relative; 
+	border-top-width: 0px;
+    border-right-width: 0px; 
+    border-bottom-width: 1px;
+    border-left-width: 0px;
+}
+.dropdown .editor {
+	display:block;
+	border:0;
+	padding:0;
+	width:100%;
+	/*box-shadow: inset 1px 2px 3px #ddd;*/
+	height:inherit;
+}
+.dropdown .trigger {
+	position:absolute;
+	top:0;
+	right:0;
+	background:url(../img/downSelect.png) no-repeat center center; 
+	border-top-width: 0px;
+    border-right-width: 0px; 
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    padding:1px 8px;
+}
+.dropdown ul {
+	display:none;
+	width:100%;
+	height:140px;
+	/*padding:2px;*/
+	position:absolute;
+	top:100%;
+	background-color:#FFF;
+	border:1px solid #DDD;
+	border-radius: 0 0 5px 5px;
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+.dropdown ul li {
+	height:20px;
+	display:block;
+	font-size:12px;
+	overflow:hidden;
+	cursor:pointer;
+}
+.dropdown ul li .hot {
+	color: red;
+}
+.dropdown ul li:hover {
+	background-color: #EEE;
+}
+.dropdown ul .search {
+	display:block;
+	border: 1px solid #EEEEEE;
+	border-bottom: 1px solid #808080;
+}
+.dropdown ul .search:hover{
+	background-color:#FFF;
+}
+.dropdown ul .search input {
+	padding:2px;
+	width:100%;
+	border:0;
+	font-size:14px;
+	background:none;
+}
 /*图片按钮去掉下划线*/
 input[type="image"]{
 	border-bottom-width:0px;
 }
+
 /*”限字“样式*/
 .cSpan{
 	padding: 2px 5px;
@@ -113,6 +186,14 @@ input[type="image"]{
 .letterRed{
 	color: red;
 }
+/*给字体一个左边距16px对齐*/
+.letterSpace{
+	padding-left: 16px;
+}
+/*日期输入框的长度*/
+.numberWidth{
+	width: 40px;
+}
 body{
 	margin: 0 auto;
 	font-family:"microsoft yahei" ,sans-serif;
@@ -124,7 +205,8 @@ body{
 .con5,
 .con6,
 .con7,
-.con8{
+.con8,
+.con9{
    padding: 5px 0;
    border-bottom: 1px solid #009843;
 }
@@ -134,8 +216,10 @@ body{
 .con5 fieldset,
 .con6 fieldset,
 .con7 fieldset,
-.con8 fieldset{
-	margin-left: 36px;
+.con8 fieldset,
+.con9 fieldset{
+	margin-left: 11px;
+	padding-left: 25px;
 }
 
 
@@ -308,6 +392,9 @@ body{
 	margin: 10px 16px;
 	padding-left: 25px;
 }
+.c1zero{
+	background: url(../img/keylitter.png) left center no-repeat;
+}
 .c1one{
 	background: url(../img/select.png) left center no-repeat;
 }
@@ -435,7 +522,7 @@ body{
 	padding: 5px 0;
 }
 
-.c3one img{
+.c3Appimg{
 	padding: 10px 30px 0 85px;
 }
 .c3one input{
@@ -573,6 +660,9 @@ body{
 .cx3 .cx3_do{
 	padding-top:10px;
 }
+.c5Appleft{
+	padding-left: 120px !important;
+}
 /*con6开始*/
 .con6{
     position: relative;
@@ -623,34 +713,34 @@ body{
 .c8two,
 .c8three,
 .c8four,
-.c8five{
+.cPlayingend{
 	padding: 5px 0;
 }
 
-.c8four p{
+.cPlayingend p{
 	margin-left: 105px;
 }
-.c8five {
+.cPlayingend {
 	margin: 20px 150px;
 }
 
-.c8five li{
+.cPlayingend li{
 	padding: 8px 40px;
 	margin-right: 50px;
 	border-radius: 5px;
 	background: #c9c9c9;
 	display: inline-block;
 }
-.c8five li a{
+.cPlayingend li a{
 	color: #FFFFFF;
 	font-weight: 900;
 	font-size: 20px;
 }
-.c8five li:nth-of-type(2){
+.cPlayingend li:nth-of-type(2){
 	background: #999;
 	margin:0 60px;
 }
-.c8five li:nth-of-type(3){
+.cPlayingend li:nth-of-type(3){
 	background: #009946;
 	margin-left:60px;
 }

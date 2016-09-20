@@ -21,14 +21,14 @@
 }
 /*con3*/
 .c3EookBox ul{
-	margin: 10px 0;
+	margin: 10px 36px 10px 0;
 	padding: 5px 10px;
 	background: #EEEEEE;
 	border-radius: 10px;
 }
 .c3EookBox ul li{
 	display: inline-block;
-	padding: 0 45px 0 45px;
+	padding: 0 40px 0 40px;
 }
 .c3Ebookright{
 	margin-right: 550px;
@@ -52,4 +52,3 @@
 	width: 85px;
 	text-align: center;
 }
-.c6
