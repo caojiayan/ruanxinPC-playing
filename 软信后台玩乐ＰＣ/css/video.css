@@ -11,6 +11,7 @@
 	border: 1px solid #a0a0a0;
 	margin-right: 36px;
 	padding: 10px 20px;
+	display: none;
 }
 
 .c3Videoup .c3Videoup2{
@@ -41,11 +42,11 @@
 	display: inline-block;
 	padding: 0 20px;
 }
-.c3Videoedit{
+/*.c3Videoedit{
 }
 .c3Videoedit:hover{
 	
-}
+}*/
 /*视频编辑新增*/
 .c3VideoBoxall{
 	width:1010px;
@@ -54,6 +55,7 @@
 	left: 36px;
 	background: #FFFFFF;
 	border: 1px solid #A0A0A0;
+	display: none;
 }
 .c3VideoBox1{
 	background: #EEEEEE;

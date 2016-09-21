@@ -1,24 +1,6 @@
 
 /*con2*/
-.con2_nav{
-	float: left;
-	padding-top: 10px;
-	padding-left: 42px;
-}
-.con2_nav ul{
-	background: #EEEEEE;
-	width: 950px;
-	padding: 5px 5px 5px 15px;
-	margin: 0 auto;
-	border-radius: 5px;
-}
 
-.con2_nav ul li{
-	display: inline-block;
-	padding-right: 10px;
-	margin-right: 10px;
-	background-size: 10px 10px;
-}
 /*con3*/
 .c3EookBox ul{
 	margin: 10px 36px 10px 0;
