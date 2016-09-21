@@ -1,0 +1,19 @@
+.c2one{
+	background: url(../img/music2.png) no-repeat left top;
+}
+.c3one{
+	background: url(../img/music1.png) no-repeat left top;
+}
+.c3MusicLyric{
+	margin:10px 0;
+}
+/**/
+.c4Musicpic{
+	margin: 30px 90px 0 90px ;
+}
+.c4Musicpic li{
+	display: inline-block;
+	width: 100px;
+	text-align: center;
+	padding-right: 30px;
+}

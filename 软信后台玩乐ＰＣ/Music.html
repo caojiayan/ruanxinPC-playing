@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8" />
-		<title>软信玩乐-APP</title>
+		<meta charset="UTF-8">
+		<title>软信玩乐-音乐</title>
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js" ></script>
 		<script type="text/javascript" src="js/playingIndex.js" ></script>
 		<link rel="stylesheet" href="css/playingIndex.css" />
+		<link rel="stylesheet" href="css/Music.css" />
 	</head>
 	<body>
 		<!--header开始-->
@@ -70,138 +72,46 @@
         </div>
         <!--header结束-->
         <!--content开始-->
-        <div class="content">
+         <div class="content">
         	<!--con1-->
 	        <div class="con1 clearfix">
 		        <div class="con1_nav">
-			        <p>展开左侧<span>新增 - APP </span></p>
+			        <p>展开左侧<span>新增 - 音乐 </span></p>
 		        </div>
 		        <div class="con1_msg">
-			    <p>软信商家发布“APP”的有关规定和说明</p>
+			    <p>软信商家发布“全新实物类商品”的有关规定和说明</p>
 		        </div>
 		        <form>
-		        <fieldset class="c1one">
-		        	<span>类目搜索</span>
-		        	<input type="text" value="聊天" onfocus="javascript:if(this.value=='聊天')this.value='';"/>
-		        	<button type='submit'>确定</button>
-		        	<span class="c1conSpan">类目选择</span>1级
-		        	<select name="1级" >
-                        <option value="">APP</option>
-                        <option value="">APP</option>
-                        <option value="">APP</option>
-                        <option value="">APP</option>
-                    </select>
-                    2级
-		        	<select name="2级" >
-                        <option value="">应用</option>
-                        <option value="">应用</option>
-                        <option value="">应用</option>
-                        <option value="">应用</option>
-                    </select>
-                    3级
-                    <select name="3级" >
-                        <option value="">社交聊天</option>
-                        <option value="">社交聊天</option>
-                        <option value="">社交聊天</option>
-                        <option value="">社交聊天</option>
-                    </select>
-                    <img src="img/addlitter.png" align="center">
-                </fieldset>
-		        <fieldset class="c1two">
-		        	<span>选定类目</span>
-		        	<span class="c1twoSpan">服务方式</span>
-		        	<label><input name="平台" type="radio" value="" />平台</label>
-		        	<label><input name="商家" type="radio" value="" />商家</label>
-		        	<label><input name="内部使用" type="radio" value="" />内部使用</label>
-		        </fieldset>
-		        <fieldset class="c1three">
-		        	<div class="c1AppProcess">
-		        	<span>APP流程</span>
-		        	<ul class="c13Ul1">
-		        		<li>上传安装包</li>
-		        		<li>填写信息</li>
-		        		<li>提交审核</li>
-		        		<li>上架销售</li>
-		        	</ul>
-		        	<ul class="c13Ul2">
-		        		<li></li>
-		        		<li></li>
-		        		<li></li>
-		        		<li></li>
-		        	</ul>
-		        	</div>
-		        </fieldset>
-		        <fieldset class="c1four">
-		        	<span class="c2oneSpan">第1步：</span>
-		        	上传安装包
-		        </fieldset>
-		        <fieldset class="c1five">
-		        	<span>软件平台</span>
-		        	<label><input name="软件平台" type="radio" value="" />安卓（Android）</label>
-		        	<label><input name="软件平台" type="radio" value="" />微软（Windows）</label>
-		        	<label><input name="软件平台" type="radio" value="" />苹果（IOS）</label>
-		        </fieldset>
-		        <fieldset class="c1six">
-		        	<span>安装包</span>
-		        	<div class="c16Box">
-		        		<span>版本类型</span>
-		        		<label><input name="版本类型" type="radio" value="" />正式版</label>
-		        		<label><input name="版本类型" type="radio" value="" />Beta版</label>
-		        		<span>版本号</span>
-		        		<input type="text" value="0.8.2" onfocus="javascript:if(this.value=='0.8.2') this.value='';"/>
-		        		<input type="checkbox" checked="checked">历史版本
-		        	</div>
-		        	<a href="#"><img class="normalFace" src="img/upload.png" onclick="fileSelect();"></a>
-	    			<input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>上传
-		        </fieldset>
-		        <fieldset class="c1seven">
-		        	<table width="950" border="1" cellpadding="0" cellspacing="0" bordercolor="#999" style="border-collapse:collapse;">
-		        		<tr>
-		        			<td>安装包文件</td>
-		        			<td>大小</td>
-		        			<td>版本类型</td>
-		        			<td>版本号</td>
-		        			<td>上传时间</td>
-		        			<td>
-		        				<img src="img/block.png" />
-		        				<img src="img/trashW.png" />
-		        			</td>
-		        		</tr>
-		        		<tr>
-		        			<td>com.example.soft***</td>
-		        			<td>15.2M</td>
-		        			<td>Beta版本</td>
-		        			<td>0.8.1</td>
-		        			<td>2016.8.30,16:22:56</td>
-		        			<td>
-		        				<img src="img/block.png" />
-		        				<img src="img/trashW.png" />
-		        			</td>
-		        		</tr>
-		        		<tr>
-		        			<td>com.example.soft***</td>
-		        			<td>15.2M</td>
-		        			<td>Beta版本</td>
-		        			<td>0.8.1</td>
-		        			<td>2016.8.30,16:22:56</td>
-		        			<td>
-		        				<img src="img/block.png" />
-		        				<img src="img/trashW.png" />
-		        			</td>
-		        		</tr>
-		        		<tr>
-		        			<td>com.example.soft***</td>
-		        			<td>15.2M</td>
-		        			<td>Beta版本</td>
-		        			<td>0.8.1</td>
-		        			<td>2016.8.30,16:22:56</td>
-		        			<td>
-		        				<img src="img/block.png" />
-		        				<img src="img/trashW.png" />
-		        			</td>
-		        		</tr>
-		        	</table>
-		        </fieldset>
+		        	<fieldset class="c1one">
+		        		<span class="cright">是否原创</span>
+		        		<label><input name="是否原创" type="radio" value="" />是</label>
+		        		<label><input name="是否原创" type="radio" value="" />否</label>
+		        		<span class="c3right">制作方式</span>
+		        		<label><input name="制作方式" type="radio" value="" />团队</label>
+		        		<label><input name="制作方式" type="radio" value="" />个人</label>
+		        	</fieldset>
+		        	<fieldset class="c1two">
+		        		<span class="cright">主题歌</span>
+		        		<label><input name="主题歌" type="radio" value="" />片头</label>
+		        		<label><input name="主题歌" type="radio" value="" />片尾</label>
+		        		<span class="cright"></span>
+		        		<span>主题指定</span>
+		        		<img src="img/select.png" align="center">
+		        		<input type="text" value="如：中国好声音" onfocus="javascript:if(this.value=='如：中国好声音')this.value='';"/>
+		        		<img src="img/addlitter.png" align="center">
+		        		若无匹配直接输入并点”新增“按钮即可新增”影视作品“
+		        	</fieldset>
+		        	<fieldset class="c1three">
+		        		<span class="cright">专辑/系列</span>
+		        		<label><input name="主题歌" type="radio" value="" />是</label>
+		        		<label><input name="主题歌" type="radio" value="" />否</label>
+		        		<span class="cright"></span>
+		        		<span>专辑/系列</span>
+		        		<img src="img/select.png" align="center">
+		        		<input type="text" value="如：民歌系列" onfocus="javascript:if(this.value=='如：民歌系列')this.value='';"/>
+		        		<img src="img/addlitter.png" align="center">
+		        		若无匹配直接输入并点”新增“按钮即可新增”专辑/系列“
+		        	</fieldset>
 		        </form>
 		    </div>
 		    <!--con1结束-->
@@ -209,111 +119,206 @@
 		    <div class="con2">
 		    	<form>
 		    		<fieldset class="c2one">
-		    			<p><span class="c2oneSpan">第2步：</span>填写信息</p>
-		    			<span class="c2oneSpan">软件来源</span>
-		    			<label><input name="软件来源" type="radio" value="" />本人开发</label>
-		    			<label><input name="软件来源" type="radio" value="" />本组织开发</label>
-		    			<label><input name="软件来源" type="radio" value="" />个人授权上传</label>
-		    			<label><input name="软件来源" type="radio" value="" />组织授权上传</label><br />
-		    		</fieldset>	
+		    			<span class="cright letterRed">音乐文件</span>
+		    			<img src="img/upload.png" align="center">
+		    			<span>点我上传</span>
+		    			<span class="c3right">歌名</span>
+		    			<img src="img/select.png" align="center">
+		    			<input type="text" value="" onfocus="javascript:if(this.value=='')this.value='';"/>
+		    			<input type="checkbox" >
+		    			<span class="cright">同文件名</span> 
+		    			支持：mp3/aac/wma等所有音乐文件格式
+		    			<br />
+		    			<ul class="cPlayingnavLi">
+		 		            <li class="c2navli1">文件名：茉莉花.ape</li>
+		 		            <li class="c2navli2">大小：15.6M</li>
+		 		            <li class="c2navli3">原音/伴音分离：是（可支持”K歌“</li>
+		 	            </ul>
+		    		</fieldset>
 		    		<fieldset class="c2two">
-		    			<span>软件著作权</span>
-		    			<label class="c2twoLabel"><input name="软件著作权" type="radio" value="" />已发证</label>
-		    			<label class="c2twoLabel"><input name="软件著作权" type="radio" value="" />已申请，待发证</label>
-		    			<label class="c2twoLabel"><input name="软件著作权" type="radio" value="" />无</label>
+		    			演唱者
+		    			<img src="img/select.png" align="center">
+		    			<input type="text" value="" onfocus="javascript:if(this.value=='')this.value='';"/>
+		    			<input type="checkbox" >
+		    			<span class="cright">本人</span>
+		    			原唱者
+		    			<img src="img/select.png" align="center">
+		    			<input type="text" value="" onfocus="javascript:if(this.value=='')this.value='';"/>
+		    			<input type="checkbox" >本人
 		    		</fieldset>
 		    		<fieldset class="c2three">
-		    			<span>软著权信息</span>
-		    			<select name="软著权信息" >
-                            <option value="">软信-12345678</option>
-                            <option value="">软信-12345678</option>
-                            <option value="">软信-12345678</option>
-                            <option value="">软信-12345678</option>
-                            <option value="">软信-12345678</option>
-                        </select>
-                        <input type="image" src="img/addlitter.png" align="center" />
-                        <ul class="c23Boxone" style="margin-top: 5px;">
-                        	<li>证书号：12345678</li>
-                        	<li>权益人：广州软信科技有限公司</li>
-                        	<li>发证日：2016年8月28日</li>
-                        	<li>发证机关：中国国家版权局</li>
-                        </ul>
-                        <ul class="c23Boxtwo">
-                        	<li>软著权照片</li>
-                        	<li>
-                        		<a href="#"><img class="normalFace" src="img/upload.png" onclick="fileSelect();"></a>
-	    			            <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>上传
-                        	</li>
-                        	<li><img src="img/uppicture.png" align="center"></li>
-                        	<li>个人：本人签名+手印，组织：加盖公章+法人签名，支持：jpg，2M内</li>
-                        </ul>
-                        <ul class="c23Boxtwo">
-                        	<li>开发者证件</li>
-                        	<li>
-                        		<a href="#"><img class="normalFace" src="img/upload.png" onclick="fileSelect();"></a>
-	    			            <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>上传
-                        	</li>
-                        	<li><img src="img/uppicture.png" align="center"></li>
-                        	<li>个人：身份证（正+反+手持），组织：营业执照盖章+法人身份证（正+反）</li>
-                        </ul>
-                        <ul class="c23Boxtwo">
-                        	<li class="c23Boxtwoli">授权协议</li>
-                        	<li>
-                        		<a href="#"><img class="normalFace" src="img/upload.png" onclick="fileSelect();"></a>
-	    			            <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>上传
-                        	</li>
-                        	<li><img src="img/uppicture.png" align="center"></li>
-                        	<li>联运游戏请提供游戏软著和授权书，第三方授权必须提供授权书</li>
-                        </ul>
-                        <ul class="c23Boxtwo">
-                        	<li class="c23Boxtwoli">运营资质</li>
-                        	<li>
-                        		<a href="#"><img class="normalFace" src="img/upload.png" onclick="fileSelect();"></a>
-	    			            <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>上传
-                        	</li>
-                        	<li><img src="img/uppicture.png" align="center"></li>
-                        	<li>股票、医疗、彩票、银行业务等需提交相关的运营资质证明</li>
-                        </ul>
+		    			做词
+		    			<img src="img/select.png" align="center">
+		    			<input type="text" value="" onfocus="javascript:if(this.value=='')this.value='';"/>
+		    			<input type="checkbox" >
+		    			<span class="cright">本人</span>
+		    			作曲
+		    			<img src="img/select.png" align="center">
+		    			<input type="text" value="" onfocus="javascript:if(this.value=='')this.value='';"/>
+		    			<input type="checkbox" >本人
 		    		</fieldset>
 		    	</form>
 		    </div>
 		    <!--con2结束-->
+		    <!--con3开始-->
 		    <div class="con3">
 		    	<form>
 		    		<fieldset class="c3one">
-		    			<p><span class="cright">软件图标</span>要求：512*512px,支持：png透明图标，无角标</p>
-		    			<img src="img/logo.png" class="c3Appimg">
-		    			<a href="#"><img class="normalFace" src="img/upload.png" onclick="fileSelect();"></a>
-	    			    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>上传
+		    			<span class="cright letterRed">歌词上传</span>
+		    			<img src="img/upload.png" align="center">
+		    			<span class="cright">点我上传</span>
+		    			支持：LRC、ID3（LRC）、TXT、TAG、SRT、UTF、KSC、SMI、ASS、SSA、SNC、QLY、KRC等多种歌曲
+		    			<ul class="cPlayingnavLi">
+		 		            <li class="c2navli1">文件名：茉莉花.irc</li>
+		 		            <li class="c2navli2">大小：10.2k</li>
+		 		            <li class="c2navli3">支持逐字变色：否（演唱进度）</li>
+		 	            </ul>
 		    		</fieldset>
 		    		<fieldset class="c3two">
-		    			<span class="cright">软件名称</span>
-		    			<input type="text" value="软信" onfocus="javascript:if(this.value=='软信')this.value='';"/>
-		    			<img src="img/yes.png">
-		    			<span>最简洁的名称，要求：6中文内，12字节，请勿使用他人软件名，避免侵权纠纷</span>
+		    			<span class="cright">歌词作者</span>
+		    			<input type="text" value="" onfocus="javascript:if(this.value=='')this.value='';"/>
+		    			<input type="checkbox" >
+		    			<span>本人</span>
+		    			<span class="c3right">软信号</span>
+		    			<input type="text" value="" onfocus="javascript:if(this.value=='')this.value='';"/>
+		    			<input type="checkbox" >本人
 		    		</fieldset>
 		    		<fieldset class="c3three">
-		    			<span class="cright">简要介绍</span>
-		    			<span class="cSpan">45/50</span>
-		    			<span class="c3right">简洁明了的介绍软件最具有吸引力的亮点</span>
+		    			<span class="cright letterRed">分类标签</span>
+		    			若无匹配可直接输入后”新增“标签
 		    			<br />
-		    			<textarea class="c3Apptex">
-创新的聊天，全面的社交，好玩额度飞纸，无忧的购物，尽情释放你的能力，将能力变成你的收益...
-		    			</textarea>
-		    		</fieldset>
-		    		<fieldset class="c3four">
-		    			<span class="cright">更新内容</span>
-		    			<span class="cSpan">65/200</span>
-		    			<span class="c3right">简洁明了介绍本次版本的更新内容</span>
-		    			<br />
-		    			<textarea class="c3Apptex">
-    1、创新的聊天，
-    2、全面的社交，
-    3、好玩的飞纸，
-    4、无忧的购物，
-    5、尽情释放你的能力，将能力变为您的收益...
-    6、其他已知bug修复
-		    			</textarea>
+		    			<!--分类标签-->
+		    			<div class="c3MusicLyric">
+		    				<span class="cright">曲风流派</span>
+		    				<div class="dropdown">  <!-- 模拟 select 的标记， -->
+			                    <input class="editor cs2one" type="text" value="民谣" onfocus="javascript:if(this.value=='民谣')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                    <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                    <ul>   <!-- 列表菜单 -->
+				                    <li class="search" style="border: 1px solid #EEEEEE;">
+					                    <input type="text" value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                    </li>   <!-- 过滤输入的列表， -->
+				                    <li>民谣</li>
+				                    <li>民谣112</li>
+				                    <li>民谣223</li>
+				                    <li>民谣224</li>
+				                    <li>民谣335</li>
+				                    <li>民谣336</li>
+				                    <li>民谣447</li>
+				                    <li>民谣448</li>
+				                    <li>民谣559</li>
+			                    </ul>
+		                    </div>
+		                    <button type='submit'>新增</button>
+		                    <span class="c3right"></span>
+		                    <span class="cright">语言</span>
+		    				<div class="dropdown">  <!-- 模拟 select 的标记， -->
+			                    <input class="editor cs2one" type="text" value="华语" onfocus="javascript:if(this.value=='华语')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                    <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                    <ul>   <!-- 列表菜单 -->
+				                    <li class="search" style="border: 1px solid #EEEEEE;">
+					                    <input type="text" value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                    </li>   <!-- 过滤输入的列表， -->
+				                    <li>华语</li>
+				                    <li>华语112</li>
+				                    <li>华语223</li>
+				                    <li>华语224</li>
+				                    <li>华语335</li>
+				                    <li>华语336</li>
+				                    <li>华语447</li>
+				                    <li>华语448</li>
+				                    <li>华语559</li>
+			                    </ul>
+		                    </div>
+		                    <button type='submit'>新增</button>
+		    			</div>
+		    			<div class="c3MusicLyric">
+		    				<span class="cright">场景</span>
+		    				<div class="dropdown">  <!-- 模拟 select 的标记， -->
+			                    <input class="editor cs2one" type="text" value="旅行" onfocus="javascript:if(this.value=='旅行')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                    <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                    <ul>   <!-- 列表菜单 -->
+				                    <li class="search" style="border: 1px solid #EEEEEE;">
+					                    <input type="text" value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                    </li>   <!-- 过滤输入的列表， -->
+				                    <li>旅行</li>
+				                    <li>旅行112</li>
+				                    <li>旅行223</li>
+				                    <li>旅行224</li>
+				                    <li>旅行335</li>
+				                    <li>旅行336</li>
+				                    <li>旅行447</li>
+				                    <li>旅行448</li>
+				                    <li>旅行559</li>
+			                    </ul>
+		                    </div>
+		                    <button type='submit'>新增</button>
+		                    <span class="c3right"></span>
+		                    <span class="cright">心情</span>
+		    				<div class="dropdown">  <!-- 模拟 select 的标记， -->
+			                    <input class="editor cs2one" type="text" value="愉悦" onfocus="javascript:if(this.value=='愉悦')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                    <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                    <ul>   <!-- 列表菜单 -->
+				                    <li class="search" style="border: 1px solid #EEEEEE;">
+					                    <input type="text" value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                    </li>   <!-- 过滤输入的列表， -->
+				                    <li>愉悦</li>
+				                    <li>愉悦112</li>
+				                    <li>愉悦223</li>
+				                    <li>愉悦224</li>
+				                    <li>愉悦335</li>
+				                    <li>愉悦336</li>
+				                    <li>愉悦447</li>
+				                    <li>愉悦448</li>
+				                    <li>愉悦559</li>
+			                    </ul>
+		                    </div>
+		                    <button type='submit'>新增</button>
+		    			</div>
+		    			<div class="c3MusicLyric">
+		    				<span class="cright">国家</span>
+		    				<div class="dropdown">  <!-- 模拟 select 的标记， -->
+			                    <input class="editor cs2one" type="text" value="中国" onfocus="javascript:if(this.value=='中国')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                    <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                    <ul>   <!-- 列表菜单 -->
+				                    <li class="search" style="border: 1px solid #EEEEEE;">
+					                    <input type="text" value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                    </li>   <!-- 过滤输入的列表， -->
+				                    <li>中国</li>
+				                    <li>中国112</li>
+				                    <li>中国223</li>
+				                    <li>中国224</li>
+				                    <li>中国335</li>
+				                    <li>中国336</li>
+				                    <li>中国447</li>
+				                    <li>中国448</li>
+				                    <li>中国559</li>
+			                    </ul>
+		                    </div>
+		                    <button type='submit'>新增</button>
+		                    <span class="c3right"></span>
+		                    <span class="cright">形式</span>
+		    				<div class="dropdown">  <!-- 模拟 select 的标记， -->
+			                    <input class="editor cs2one" type="text" value="歌曲" onfocus="javascript:if(this.value=='歌曲')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                    <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                    <ul>   <!-- 列表菜单 -->
+				                    <li class="search" style="border: 1px solid #EEEEEE;">
+					                    <input type="text" value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                    </li>   <!-- 过滤输入的列表， -->
+				                    <li>歌曲</li>
+				                    <li>歌曲112</li>
+				                    <li>歌曲223</li>
+				                    <li>歌曲224</li>
+				                    <li>歌曲335</li>
+				                    <li>歌曲336</li>
+				                    <li>歌曲447</li>
+				                    <li>歌曲448</li>
+				                    <li>歌曲559</li>
+			                    </ul>
+		                    </div>
+		                    <button type='submit'>新增</button>
+		                    可选：歌曲/纯乐器/大自然
+		    			</div>
+		    			<!--分类标签结束-->
 		    		</fieldset>
 		    	</form>
 		    </div>
@@ -322,34 +327,29 @@
 		    <div class="con4">
 		    	<form>
 		    		<fieldset class="c4one">
-		    			<span class="cright">软件主图</span>
-		    			<span class="cSpan">4/5</span>
-		    			<span class="c3right">1至5张480*800或800*480px,支持：jpg/png,< 500k,横竖均可</span>
-		    		</fieldset>
-		    		<fieldset class="c4two">
-		    			<span class="cright">主图样式</span>
-		    			<label><input name="主图样式" type="radio" value="" />横</label>
-		    			<label><input name="主图样式" type="radio" value="" />竖</label>
-		    		</fieldset>
-		    		<fieldset class="c4three">
-		    			<span class="cright c4left">主图列表</span>
-		    			<a href="#"><img class="normalFace" src="img/addpic3.png" onclick="fileSelect();"></a>
-	    			    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
-	    			    <a href="#"><img class="normalFace" src="img/addpic3.png" onclick="fileSelect();"></a>
-	    			    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
-	    			    <a href="#"><img class="normalFace" src="img/addpic3.png" onclick="fileSelect();"></a>
-	    			    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
-	    			    <a href="#"><img class="normalFace" src="img/addpic3.png" onclick="fileSelect();"></a>
-	    			    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
-	    			    <a href="#"><img class="normalFace" src="img/addpic3.png" onclick="fileSelect();"></a>
-	    			    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+		    			<span class="cright">音乐图片</span>
+		    	                           至少2张（封面图+音乐图：各1张），1500*1000px,支持：jpg等图片格式
+		    	        <ul class="c4Musicpic">
+		    				<li><img src="img/pictureH.png" align="center"></li>
+		    				<li><img src="img/pictureH.png" align="center"></li>
+		    				<li><img src="img/pictureH.png" align="center"></li>
+		    				<li><img src="img/pictureH.png" align="center"></li>
+		    				<li><img src="img/pictureH.png" align="center"></li>
+		    			</ul>
+		    			<ul class="c4Musicpic">
+		    				<li>封面图</li>
+		    				<li>音乐图1</li>
+		    				<li>音乐图2</li>
+		    				<li>音乐图3</li>
+		    				<li>音乐图4</li>
+		    			</ul>
 		    		</fieldset>
 		    	</form>
 		    </div>
 		    <!--con4结束-->
 		    <!--con5开始-->
-	        <div class="con5 clearfix">
-		        <div class="cx1">
+		    <div class="con5">
+		    	<div class="cx1">
 			        <form action="" method="">
 				        <p>交易类型</p>
 				        <label><input name="交易类型" type="radio" value="cx1one" id="cx1one" onclick="aCheck1()" checked="checked"/>零售</label> 
@@ -647,139 +647,44 @@
 			                <div class="cx3_do">
 				                <span>软信币抵扣比例</span>
 				                <input type="text"  value="9" onfocus="javascript:if(this.value=='9')this.value='';"/>% <span class="c5Appleft">提示：最大支持99%，超过50%则销售不计搜索排名，建议设置20%左右（转化率会提升明显）</span>
-			                </div>
+			                </di>
 			            </fieldset>
 			        </form>
 		        </div>
-	        </div>
-	        <!--con5结束-->
-	        <!--con6开始-->
-	        <div class="con6 clearfix">
-	        	<form>
-	        		<fieldset class="c6one">
-	        			<span class="cright c6Span">软件收费</span>
-	        			<ul>
-	        				<li>
-	        					<label><input name="软件收费" type="radio" value="" />免费</label>
-	        			        <label><input name="软件收费" type="radio" value="" />试用版，付费后完整版</label>
-	        			        <label><input name="软件收费" type="radio" value="" />付费软件</label>
-	        				</li><br />
-	        				<li>
-	        					<input type="checkbox" checked="checked">我同意加入<a href=""><span class="letterBlue">《APP库计划》</span></a>
-	        					<span class="c3right">提示：收费软件：按下载收费，免费软件不收费</span>
-	        				</li><br />
-	        				<li>
-	        					<span class="c6Price">价格￥</span>
-	        					<label><input name="价格￥" type="radio" value="" />0.1元/次</label>
-	        			        <label><input name="价格￥" type="radio" value="" />
-	        			                      自定：<input type="text" value="4.9" onfocus="javascript:if(this.value=='4.9')this.value='';"/>元
-	        			        </label>
-	        			        <label><input name="价格￥" type="radio" value="" />付费软件</label>
-	        			        <span class="">价格范围：1~99元</span>
-	        				</li>
-	        			</ul>
-	        		</fieldset>
-	        		<fieldset class="c6two">
-	        			<span class="cright">内容收费</span>
-	        			<label><input name="内容收费" type="radio" value="" />免费</label>
-	        			<label><input name="内容收费" type="radio" value="" />含付费内容（软件方+第三方）</label>
-	        			<label><input name="内容收费" type="radio" value="" />含付费内容（第三方）</label>
-	        		</fieldset>
-	        	</form>
-	        </div>
-	        <!--con6结束-->
-	        <!--con7开始-->
-	        <div class="con7">
-	        	<form>
-	        		<fieldset class="c7one">
-	        			<span class="cright">软件推广</span>
-	        			<span class="cright">
-	        				<label><input name="参与推广" type="radio" value="" />参与推广</label>
-	        			</span>
-	        			<span>
-	        				<label><input name="已阅读" type="radio" value="" />我已阅读<a href=""><span class="letterBlue">《APP推广协议》</span></a>并同意协议，承担相应责任！</label>
-	        			</span>
-	        		</fieldset>
-	        		<fieldset class="c7two">
-	        			<span class="c7right">账户：8888元</span>
-	        			<span class="c3right">
-	        				充值金额：<input type="text" value="3000" onfocus="javascript:if(this.value=='3000')this.value='';"/>元
-	        				<span class="coRed">支付</span>
-	        			</span>
-	        		</fieldset>
-	        		<fieldset class="c7three">
-	        			<span class="cright">条形推荐区</span>
-	        			<a href="#"><img class="normalFace" src="img/smallBarcode.png" onclick="fileSelect();"></a>
-	    			    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
-	    			    <div class="c7left">
-	    			    	1500*500，<2M,支持JPG/PNG,用于列表页"单条形推荐"（<a href=""><span class="letterBlue">查看案例</span></a>）</br>
-	    			    	<span class="cright">
-	    			    		展现出价
-	    			    		<input type="text" value="6.5" onfocus="javascript:if(this.value=='6.5')this.value='';"/>元/千次
-	    			    	</span>
-	    			    	市场均价：6.1元/千次
-	    			    </div>	
-	        		</fieldset>
-	        		<fieldset class="c7three">
-	        			<span class="cright">条形推荐区</span>
-	        			<a href="#"><img class="normalFace" src="img/bigBarcode.png" onclick="fileSelect();"></a>
-	    			    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
-	    			    <div class="c7left">
-	    			    	1500*500，<2M,支持JPG/PNG,用于列表页"单条形推荐"（<a href=""><span class="letterBlue">查看案例</span></a>）</br>
-	    			    	<span class="cright">
-	    			    		展现出价
-	    			    		<input type="text" value="6.5" onfocus="javascript:if(this.value=='6.5')this.value='';"/>元/千次
-	    			    	</span>
-	    			    	市场均价：6.1元/千次
-	    			    </div>	
-	        		</fieldset>
-	        	</form>
-	        </div>
-	        <!--con7结束-->
-	        <!--con8开始-->
-	        <div class="con8">
-	        	<form>
-	        		<fieldset class="c8one">
-	        			<span class="cright">发布时间</span>
-	        			<label><input name="发布时间" type="radio" value="" />通过审核就发布</label>
-	        			<label><input name="发布时间" type="radio" value="" />手动发布</label>
-	        			<label><input name="发布时间" type="radio" value="" />定时发布</label>
-	        			<span class="cright">设定：
-	        				<input type="date">
-	        			</span>
-	        		</fieldset>
-	        		<fieldset class="c8two">
-	        			<span class="cright">
-	        				验证手机号
-	        			</span>
-	        			<input type="text" value="13512***678" onfocus="javascript:if(this.value=='13512***678')this.value='';"/>
-	        			<button type='submit'>获取验证码</button>
-	        			<span>15秒后</span>
-	        		</fieldset>
-	        		<fieldset class="c8three">
-	        			<span class="cright" style="margin-right: 32px;">
-	        				验证码
-	        			</span>
-	        			<input type="text" value="6678" onfocus="javascript:if(this.value=='6678')this.value='';"/>
-	        			<input type="image" src="img/yes.png">
-	        			<span class="c3right">
-	        				根据有关部门规定，每次发布和更新应用信息需验证手机号。
-	        			</span>
-	        		</fieldset>
-	        		<fieldset class="c8four">
-	        			<span class="cright">权利声明</span>
-	        			<input type="checkbox" checked="checked">我同意以下权利声明
-	        			<p>本公司/个人对该应用享有完整版权，不存在任何侵犯第三方合法权益的情形。</p>
-	        			<p>本公司/个人上述承诺若是存在虚假，愿承担一切法律后果，并且赔偿因此而对软信造成的全部损失。</p>
-	        		</fieldset>
-	        		<ul class="cPlayingend">
+		    </div>
+		    <!--con5结束-->
+		    <!--con6开始-->
+		    <div class="con6">
+		    	<form>
+		    		<fieldset class="c6one">
+		    			<span class="cright letterRed">收费模式</span>
+		    		</fieldset>
+		    		<fieldset class="c6two">
+		    			<span class="cright" style="margin-right: 10px;">源文件</span>
+		    			<label><input name="源文件" type="radio" value="" />免费</label>
+		    			<label><input name="源文件" type="radio" value="" />收费</label>
+		    			<span class="cright">
+		    				<input type="checkbox" checked="checked">
+		    				我同意加入<a href="#"><span class="letterBlue">《音乐库计划》</span></a>
+		    			</span>
+		    			提示：入库共享并按播放量收费
+		    		</fieldset>
+		    		<fieldset class="c6three">
+		    			<span class="cright" style="margin-right: 10px;">价格￥</span>
+		    			<label><input name="价格￥" type="radio" value="" />1分/次</label>
+		    			<label><input name="价格￥" type="radio" value="" />
+		    			自定：<input type="text" value="9" onfocus="javascript:if(this.value=='9')this.value='';"/>分
+		    			</label>
+		    			<span class="c3right">价格范围：1~99元</span>
+		    		</fieldset>
+		    		<ul class="cPlayingend">
 	    				<li><a href="">存为草稿</a></li>
 	    				<li><a href="">放入仓库</a></li>
 	    				<li><a href="">上架销售</a></li>
 	    			</ul>
-	        	</form>
-	        </div>
-	        <!--con8结束-->
+		    	</form>
+		    </div>
+		    <!--con6结束-->
 		</div>
 		<!--content结束-->
 		<!--footer开始-->

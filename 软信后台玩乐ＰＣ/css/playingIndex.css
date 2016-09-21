@@ -231,7 +231,7 @@ body{
 	background: #EEEEEE;
 	width: 950px;
 	padding: 5px 5px 5px 15px;
-	margin: 0 auto;
+	margin-top: 10px;
 	border-radius: 5px;
 }
 
@@ -405,6 +405,7 @@ body{
 .c1zero,
 .c1one,
 .c1two,
+.c1three,
 .c1four,
 .c1five,
 .c1six,
@@ -429,14 +430,14 @@ body{
 	background: url(../img/keylitter.png) no-repeat center left;
 	margin-left: 50px;
 }
-.c1three{
-	margin: 10px 31px;
+.c1AppProcess{
+	margin: 0 31px;
 	background: #EEEEEE;
 	border-radius: 10px;
 	position: relative;
 	height: 70px;
 }
-.c1three span{
+.c1AppProcess span{
 	margin:0 10px;
 	position: relative;
 	top: 25px;
