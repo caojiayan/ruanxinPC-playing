@@ -102,6 +102,7 @@ button{
     border-right-width: 0px; 
     border-bottom-width: 1px;
     border-left-width: 0px;
+    z-index: 9999;
 }
 .dropdown .editor {
 	display:block;
@@ -586,7 +587,16 @@ body{
 .con5{
 	position: relative;
 }
-
+.c5one,
+.c5two,
+.c5three,
+.c5four,
+.c5five,
+.c5six{
+	padding: 5px 0;
+}{
+	padding: 5px 0;
+}
 .cx1{
 	height: 35px;
 	line-height: 35px;

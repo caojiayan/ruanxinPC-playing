@@ -55,8 +55,8 @@
 $(document).ready(function(){
     $(".dropdown ul li").click(function(){
 		var droli=$(".dropdown ul li:hover").text();
-		$(".editor").val(droli);
-//      alert(droli);
+//		alert(droli);
+		$(".cs2one").val(droli);
 	});
 });
 
@@ -115,6 +115,8 @@ function fileSelect() {
     function fileSelected() {
       // 文件选择后触发次函数
     }
+
+
 
 //con5中交易类型选择
 function aCheck1(){ 
@@ -197,3 +199,6 @@ document.getElementById("cx16").style.display="none";
 document.getElementById("cx17").style.display="none";
 document.getElementById("cx18").style.display="block";
 }
+
+
+

@@ -205,7 +205,9 @@
 		    		</fieldset>
 		    		<fieldset class="c3four">
 		    			<span class="cright">源文件上传</span>
-		    			<img src="img/upload.png" align="center">新增上传
+		    			<a href="#"><img src="img/upload.png" onclick="fileSelect();"></a>
+	    				<input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+		    			新增上传
 		    		</fieldset>
 		    		<fieldset class="c3four">
 		    			<ul class="c2BusImgwrite">
@@ -280,9 +282,18 @@
 		    				<li><span class="letterRed">竖条形辅图</span></li>
 		    			</ul>
 		    			<ul class="c3BusImgpic">
-		    				<li><img src="img/9073tmp.jpg" align="center"></li>
-		    				<li><img src="img/pictureH.png" align="center"></li>
-		    				<li><img src="img/F3E5tmp.jpg" align="center"></li>
+		    				<li>
+		    					<a href="#"><img src='img/9073tmp.jpg' align="center" onclick="fileSelect();"></a>
+	    					    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+		    				</li>
+		    				<li>
+		    					<a href="#"><img src="img/pictureH.png" align="center" onclick="fileSelect();"></a>
+	    					    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+		    				</li>
+		    				<li>
+		    					<a href="#"><img src='img/F3E5tmp.jpg' align="center" onclick="fileSelect();"></a>
+	    					    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+		    				</li>
 		    			</ul>
 		    			<ul class="c3BusImgpic">
 		    				<li>800*800px</li>
@@ -618,7 +629,7 @@
 		    			<span class="cright">价格￥</span>
 		    			<label><input name="价格￥" type="radio" value="" />50分/次</label>
 		    			<label><input name="价格￥" type="radio" value="" />自定：
-		    			    <input type="text" value="499" onfocus="javascript:if(this.value=='499')this.value='';"/>
+		    			    <input class="numberWidth" type="text" value="499" onfocus="javascript:if(this.value=='499')this.value='';"/>分
 		    			    <span class="c3right">价格范围：1~499分</span>
 		    			</label>
 		    		</fieldset>
@@ -629,7 +640,7 @@
 		    		<fieldset class="c5four">
 		    			<span class="cright">版权费</span>
 		    			订单金额*
-		    			<input type="text" value="5" onfocus="javascript:if(this.value=='5')this.value='';"/>%
+		    			<input class="numberWidth" type="text" value="5" onfocus="javascript:if(this.value=='5')this.value='';"/>%
 		    			<span class="cright"></span>
 		    			版权费建议在9%以下，平衡”定制人“与”客户“的利益关系。
 		    		</fieldset>

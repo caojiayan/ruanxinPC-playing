@@ -120,7 +120,7 @@
 		            </div>
                     2级
 		        	<div class="dropdown">  <!-- 模拟 select 的标记， -->
-			            <input class="editor cs2one" type="text" value="电视剧" onfocus="javascript:if(this.value=='电视剧')this.value='';"/> <!-- 显示当前值的输入框 -->
+			            <input class="editor cs2two" type="text" value="电视剧" onfocus="javascript:if(this.value=='电视剧')this.value='';"/> <!-- 显示当前值的输入框 -->
 			            <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			            <ul>   <!-- 列表菜单 -->
 				            <li class="search" style="border: 1px solid #EEEEEE;">
@@ -139,7 +139,7 @@
 		            </div>
                     3级
                     <div class="dropdown">  <!-- 模拟 select 的标记， -->
-			            <input class="editor cs2one" type="text" value="都市剧" onfocus="javascript:if(this.value=='都市剧')this.value='';"/> <!-- 显示当前值的输入框 -->
+			            <input class="editor cs2three" type="text" value="都市剧" onfocus="javascript:if(this.value=='都市剧')this.value='';"/> <!-- 显示当前值的输入框 -->
 			            <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			            <ul>   <!-- 列表菜单 -->
 				            <li class="search" style="border: 1px solid #EEEEEE;">
@@ -207,41 +207,52 @@
 		    			<span class="cright" style="padding-left: 32px;">编剧</span>
 		    			<input type="text" value="" />
 		    			<img src="img/addlitter.png" align="center" class="cright">
-		    			<span>袁子弹</span>
-		    			<img src="img/delete2.png">
+		    			<span class="c4Videodel1">袁子弹
+		    			    <a class="c4Videodelimg1" href="#" ><img src="img/delete2.png"></a>
+		    			</span>
 		    		</fieldset>
 		    		<fieldset class="c2three">
 		    			<span class="cright" style="padding-left: 32px;">制片</span>
 		    			<input type="text" value="" />
 		    			<img src="img/addlitter.png" align="center" class="cright">
-		    			<span>候鸿亮</span>
-		    			<img src="img/delete2.png">
+		    			<span class="c4Videodel2">候鸿亮
+		    			    <img src="img/delete2.png">
+		    			</span>
 		    		</fieldset>
 		    		<fieldset class="c2three">
 		    			<span class="cright" style="padding-left: 32px;">导演</span>
 		    			<input type="text" value="" />
 		    			<img src="img/addlitter.png" align="center" class="cright">
-		    			<span>孔笙</span>
-		    			<img src="img/delete2.png" class="cright">
-		    			<span>简川訸</span>
-		    			<img src="img/delete2.png">
+		    			<span class="c4Videodel3">孔笙
+		    			    <img src="img/delete2.png" class="cright">
+		    			</span>
+		    			<span class="c4Videodel4">简川訸
+		    			    <img src="img/delete2.png">
+		    			</span>
 		    		</fieldset>
 		    		<fieldset class="c2three">
 		    			<span class="cright" style="padding-left: 32px;">主演</span>
 		    			<input type="text" value="" />
 		    			<img src="img/addlitter.png" align="center" class="cright">
-		    			<span>刘涛</span>
-		    			<img src="img/delete2.png" class="cright">
-		    			<span>蒋欣</span>
-		    			<img src="img/delete2.png" class="cright">
-		    			<span>王子文</span>
-		    			<img src="img/delete2.png" class="cright">
-		    			<span>杨紫</span>
-		    			<img src="img/delete2.png" class="cright">
-		    			<span>乔欣</span>
-		    			<img src="img/delete2.png" class="cright">
-		    			<span>祖峰</span>
-		    			<img src="img/delete2.png" class="cright">
+		    			<span class="c4Videodel5">刘涛
+		    			    <img src="img/delete2.png" class="cright">
+		    			</span>
+		    			<span class="c4Videodel6">蒋欣
+		    			    <img src="img/delete2.png" class="cright">
+		    			</span>
+		    			<span class="c4Videodel7">王子文
+		    			    <img src="img/delete2.png" class="cright">
+		    			</span>
+		    			</span>
+		    			<span class="c4Videodel8">杨紫
+		    			    <img src="img/delete2.png" class="cright">
+		    			</span>
+		    			<span class="c4Videodel9">乔欣
+		    			    <img src="img/delete2.png" class="cright">
+		    			</span>
+		    			<span class="c4Videodel10">祖峰
+		    			    <img src="img/delete2.png" class="cright">
+		    			</span>
 		    		</fieldset>
 		    		<fieldset class="c2four">
 		    			<span class="cright letterSpace">总集数</span>
@@ -338,7 +349,9 @@
 		                    	<span class="c3Video70Up">70%</span>
 		                    </span>
 		                    <span class="cright"></span>
-		                    <img src="img/upload.png" align="center" >
+		                    <!--点击上传-->
+		                    <a href="#"><img src="img/upload.png" onclick="fileSelect();"></a>
+	    					<input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
 		                    <span class="cright">点我上传</span>
 		                    <button type='submit'>保存</button>
 		                    </div>
@@ -391,14 +404,16 @@
 		    					普通/
 		    				</li>
 		    				<li>
-		    					<a href="#" class="c3Videoedit"><img src="img/writeSiliver.png"></a>
+		    					<a href="#" class="c3Videoedit">   <!--视频编辑新增按钮-->
+		    						<img class="c3VideoeditImg" src="img/writeSiliver.png">
+		    					</a>
 		    			    </li>
 		    			</ul>
 		    		</fieldset>
 		    		<!--视频编辑新增开始-->
 		    		<div class="c3VideoBoxall">
 		    			<div class="c3VideoBox1">
-		    				<a href="#" class="c3Videoedit" ><img src="img/delect.png" align="center" /></a>
+		    				<a href="#" class="c3Videoedit"><img class="c3VideoBox1close" src="img/delect.png" align="center" /></a>
 		    				<span>视频编辑</span>
 		    				<button type='submit'>确定</button>
 		    			</div>
@@ -487,7 +502,9 @@
 		    	<form>
 		    	<fieldset class="c4one">
 		    		<span class="cright letterRed">字幕/配音上传</span>
-		    		<img class="c3right" src="img/upload.png" align="center">点我上传
+		    		<a href="#"><img src="img/upload.png" align="cente" onclick="fileSelect();"></a>
+	    			<input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+		    		点我上传
 		    		支持：SRT、SSA、ASS、SUP等多种字幕格式
 		    	</fieldset>
 		    	<fieldset class="c4two">
@@ -500,8 +517,8 @@
 		    	<fieldset class="c4three">
 		    		<span class="cright">作者</span>
 		    		<input type="text" value="" onfocus="javascript:if(this.value=='')this.value='';"/>
-		    		<input type="checkbox" >
-		    		<span class="c3right">本人</span>
+		    		<input type="checkbox" >本人
+		    		<span class="c3right"></span>
 		    		软信号<input type="text" value="" onfocus="javascript:if(this.value=='')this.value='';"/>
 		    		<input type="checkbox" >
 		    		本人
@@ -540,7 +557,7 @@
 		            <span class="c3right"></span>
 		            <span class="cright">类型</span>
 		            <div class="dropdown">  <!-- 模拟 select 的标记， -->
-			            <input class="editor cs2one" type="text" value="都市言情" onfocus="javascript:if(this.value=='都市言情')this.value='';"/> <!-- 显示当前值的输入框 -->
+			            <input class="editor" type="text" value="都市言情" onfocus="javascript:if(this.value=='都市言情')this.value='';"/> <!-- 显示当前值的输入框 -->
 			            <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			            <ul>   <!-- 列表菜单 -->
 				            <li class="search" style="border: 1px solid #EEEEEE;">
@@ -584,11 +601,26 @@
 		    			<span class="cright">视频图片</span>
 		    			至少2张（封面图+视频图：各1张），1500*1000px,支持：jpg等图片格式
 		    			<ul class="c7Videopic">
-		    				<li><img src="img/pictureH.png" align="center"></li>
-		    				<li><img src="img/pictureH.png" align="center"></li>
-		    				<li><img src="img/pictureH.png" align="center"></li>
-		    				<li><img src="img/pictureH.png" align="center"></li>
-		    				<li><img src="img/pictureH.png" align="center"></li>
+		    				<li>
+		    					<a href="#"><img src="img/pictureH.png" onclick="fileSelect();"></a>
+	    					    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+		    				</li>
+		    				<li>
+		    					<a href="#"><img src="img/pictureH.png" onclick="fileSelect();"></a>
+	    					    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+		    				</li>
+		    				<li>
+		    					<a href="#"><img src="img/pictureH.png" onclick="fileSelect();"></a>
+	    					    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+		    				</li>
+		    				<li>
+		    					<a href="#"><img src="img/pictureH.png" onclick="fileSelect();"></a>
+	    					    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+		    				</li>
+		    				<li>
+		    					<a href="#"><img src="img/pictureH.png" onclick="fileSelect();"></a>
+	    					    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+		    				</li>
 		    			</ul>
 		    			<ul class="c7Videopic">
 		    				<li>封面图</li>
@@ -923,10 +955,10 @@
 		    			提示：入库共享并按播放量收费
 		    		</fieldset>
 		    		<fieldset class="c9two">
-		    			<span class="cright">价格￥</span>
+		    			<span class="cright letterSpace">价格￥</span>
 		    			<label><input name="价格￥" type="radio" value="" />10分/次</label>
 		    			<label><input name="价格￥" type="radio" value="" />自定：
-		    			    <input type="text" value="499" onfocus="javascript:if(this.value=='499')this.value='';"/>
+		    			    <input class="numberWidth" type="text" value="499" onfocus="javascript:if(this.value=='499')this.value='';"/>分
 		    			    <span class="c3right">价格范围：1~499分</span>
 		    			</label>
 		    		</fieldset>

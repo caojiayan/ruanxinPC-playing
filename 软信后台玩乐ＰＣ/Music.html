@@ -120,7 +120,8 @@
 		    	<form>
 		    		<fieldset class="c2one">
 		    			<span class="cright letterRed">音乐文件</span>
-		    			<img src="img/upload.png" align="center">
+		    			<a href="#"><img src="img/upload.png" align="center" onclick="fileSelect();"></a>
+	    				<input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
 		    			<span>点我上传</span>
 		    			<span class="c3right">歌名</span>
 		    			<img src="img/select.png" align="center">
@@ -147,12 +148,12 @@
 		    			<input type="checkbox" >本人
 		    		</fieldset>
 		    		<fieldset class="c2three">
-		    			做词
+		    			<span class="letterSpace">做词</span>
 		    			<img src="img/select.png" align="center">
 		    			<input type="text" value="" onfocus="javascript:if(this.value=='')this.value='';"/>
 		    			<input type="checkbox" >
 		    			<span class="cright">本人</span>
-		    			作曲
+		    			<span class="letterSpace">作曲</span>
 		    			<img src="img/select.png" align="center">
 		    			<input type="text" value="" onfocus="javascript:if(this.value=='')this.value='';"/>
 		    			<input type="checkbox" >本人
@@ -165,7 +166,8 @@
 		    	<form>
 		    		<fieldset class="c3one">
 		    			<span class="cright letterRed">歌词上传</span>
-		    			<img src="img/upload.png" align="center">
+		    			<a href="#"><img src="img/upload.png" align="center" onclick="fileSelect();"></a>
+	    				<input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
 		    			<span class="cright">点我上传</span>
 		    			支持：LRC、ID3（LRC）、TXT、TAG、SRT、UTF、KSC、SMI、ASS、SSA、SNC、QLY、KRC等多种歌曲
 		    			<ul class="cPlayingnavLi">
@@ -232,7 +234,7 @@
 		                    <button type='submit'>新增</button>
 		    			</div>
 		    			<div class="c3MusicLyric">
-		    				<span class="cright">场景</span>
+		    				<span class="cright" style="padding-left: 32px;">场景</span>
 		    				<div class="dropdown">  <!-- 模拟 select 的标记， -->
 			                    <input class="editor cs2one" type="text" value="旅行" onfocus="javascript:if(this.value=='旅行')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                    <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
@@ -275,7 +277,7 @@
 		                    <button type='submit'>新增</button>
 		    			</div>
 		    			<div class="c3MusicLyric">
-		    				<span class="cright">国家</span>
+		    				<span class="cright" style="padding-left: 32px;">国家</span>
 		    				<div class="dropdown">  <!-- 模拟 select 的标记， -->
 			                    <input class="editor cs2one" type="text" value="中国" onfocus="javascript:if(this.value=='中国')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                    <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
@@ -330,11 +332,26 @@
 		    			<span class="cright">音乐图片</span>
 		    	                           至少2张（封面图+音乐图：各1张），1500*1000px,支持：jpg等图片格式
 		    	        <ul class="c4Musicpic">
-		    				<li><img src="img/pictureH.png" align="center"></li>
-		    				<li><img src="img/pictureH.png" align="center"></li>
-		    				<li><img src="img/pictureH.png" align="center"></li>
-		    				<li><img src="img/pictureH.png" align="center"></li>
-		    				<li><img src="img/pictureH.png" align="center"></li>
+		    				<li>
+		    					<a href="#"><img src="img/pictureH.png" align="center" onclick="fileSelect();"></a>
+	    					    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>  
+		    				</li>
+		    				<li>
+		    					<a href="#"><img src="img/pictureH.png" align="center" onclick="fileSelect();"></a>
+	    					    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>  
+		    				</li>
+		    				<li>
+		    					<a href="#"><img src="img/pictureH.png" align="center" onclick="fileSelect();"></a>
+	    					    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>  
+		    				</li>
+		    				<li>
+		    					<a href="#"><img src="img/pictureH.png" align="center" onclick="fileSelect();"></a>
+	    					    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>  
+		    				</li>
+		    				<li>
+		    					<a href="#"><img src="img/pictureH.png" align="center" onclick="fileSelect();"></a>
+	    					    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>  
+		    				</li>
 		    			</ul>
 		    			<ul class="c4Musicpic">
 		    				<li>封面图</li>
@@ -673,7 +690,7 @@
 		    			<span class="cright" style="margin-right: 10px;">价格￥</span>
 		    			<label><input name="价格￥" type="radio" value="" />1分/次</label>
 		    			<label><input name="价格￥" type="radio" value="" />
-		    			自定：<input type="text" value="9" onfocus="javascript:if(this.value=='9')this.value='';"/>分
+		    			自定：<input class="numberWidth" type="text" value="9" onfocus="javascript:if(this.value=='9')this.value='';"/>分
 		    			</label>
 		    			<span class="c3right">价格范围：1~99元</span>
 		    		</fieldset>

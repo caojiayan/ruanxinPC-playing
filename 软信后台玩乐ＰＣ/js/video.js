@@ -25,6 +25,20 @@ $(document).ready(function() {
             // 显示,addClass() 添加一个class
             $(".c3VideoBoxall").show().addClass("show");
         }
+        $(".c3VideoeditImg").attr("src","img/writeRed.png")
     });
 });
 
+c3VideoBox1close
+$(document).ready(function(){
+	$(".c3VideoBox1close").click(function(){
+		$(".c3VideoeditImg").attr("src","img/writeSiliver.png")
+	});
+});
+
+//con2中删除项
+$(document).ready(function(){
+	$(".c4Videodelimg1").click(function(){
+		$(".c4Videodel1").hide();
+	});
+});
