@@ -99,7 +99,8 @@
 		        	<span class="cright">类目搜索</span>
 		        	<input type="text" value="欢乐颂" onfocus="javascript:if(this.value=='欢乐颂')this.value='';"/>
 		        	<button type='submit'>确定</button>
-		        	<span class="c1conSpan">类目选择</span>1级
+		        	<span class="c1conSpan">类目选择</span>
+		        	1级
 		        	<div class="dropdown">  <!-- 模拟 select 的标记， -->
 			            <input class="editor cs2one" type="text" value="视频" onfocus="javascript:if(this.value=='视频')this.value='';"/> <!-- 显示当前值的输入框 -->
 			            <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
@@ -107,15 +108,15 @@
 				            <li class="search" style="border: 1px solid #EEEEEE;">
 					            <input type="text" value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
 				            </li>   <!-- 过滤输入的列表， -->
-				            <li>视频</li>
-				            <li>视频112</li>
-				            <li>视频223</li>
-				            <li>视频224</li>
-				            <li>视频335</li>
-				            <li>视频336</li>
-				            <li>视频447</li>
-				            <li>视频448</li>
-				            <li>视频559</li>
+				            <li data-value=视频>视频</li>
+				            <li data-value=112>112</li>
+				            <li data-value=223>223</li>
+				            <li data-value=224>224</li>
+				            <li data-value=335>335</li>
+				            <li data-value=36>336</li>
+				            <li data-value=447>447</li>
+				            <li data-value=448>448</li>
+				            <li data-value=559>559</li>
 			            </ul>
 		            </div>
                     2级
@@ -126,15 +127,15 @@
 				            <li class="search" style="border: 1px solid #EEEEEE;">
 					            <input type="text" value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
 				            </li>   <!-- 过滤输入的列表， -->
-				            <li>电视剧</li>
-				            <li>电视剧112</li>
-				            <li>电视剧223</li>
-				            <li>电视剧224</li>
-				            <li>电视剧335</li>
-				            <li>电视剧336</li>
-				            <li>电视剧447</li>
-				            <li>电视剧448</li>
-				            <li>电视剧559</li>
+				             <li data-value=电视剧>电视剧</li>
+				            <li data-value=112>112</li>
+				            <li data-value=223>223</li>
+				            <li data-value=224>224</li>
+				            <li data-value=335>335</li>
+				            <li data-value=36>336</li>
+				            <li data-value=447>447</li>
+				            <li data-value=448>448</li>
+				            <li data-value=559>559</li>
 			            </ul>
 		            </div>
                     3级
@@ -145,21 +146,24 @@
 				            <li class="search" style="border: 1px solid #EEEEEE;">
 					            <input type="text" value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
 				            </li>   <!-- 过滤输入的列表， -->
-				            <li>都市剧</li>
-				            <li>都市剧112</li>
-				            <li>都市剧223</li>
-				            <li>都市剧224</li>
-				            <li>都市剧335</li>
-				            <li>都市剧336</li>
-				            <li>都市剧447</li>
-				            <li>都市剧</li>
-				            <li>都市剧559</li>
+				            <li data-value=都市剧>都市剧</li>
+				            <li data-value=112>112</li>
+				            <li data-value=223>223</li>
+				            <li data-value=224>224</li>
+				            <li data-value=335>335</li>
+				            <li data-value=36>336</li>
+				            <li data-value=447>447</li>
+				            <li data-value=448>448</li>
+				            <li data-value=559>559</li>
 			            </ul>
 		            </div>
-                    <img src="img/addlitter.png" align="center">
+                    <a href="#" class="c1Playinginput">
+                    	<img src="img/addlitter.png" align="center"> 
+                    </a >
                 </fieldset>
 		        <fieldset class="c1two">
 		        	<span>选定类目</span>
+		        	<span class="csPlayingleft"></span>
 		        </fieldset>
 		        </form>
 		    </div>
@@ -176,15 +180,15 @@
 				                <li class="search" style="border: 1px solid #EEEEEE;">
 					                <input type="text" value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
 				                </li>   <!-- 过滤输入的列表， -->
-				                <li>都市剧</li>
-				                <li>都市剧112</li>
-				                <li>都市剧223</li>
-				                <li>都市剧224</li>
-				                <li>都市剧335</li>
-				                <li>都市剧336</li>
-				                <li>都市剧447</li>
-				                <li>都市剧448</li>
-				                <li>都市剧559</li>
+				                <li data-value=都市剧>都市剧</li>
+				                <li data-value=112>112</li>
+				                <li data-value=223>223</li>
+				                <li data-value=224>224</li>
+				                <li data-value=335>335</li>
+				                <li data-value=36>336</li>
+				                <li data-value=447>447</li>
+				                <li data-value=448>448</li>
+				                <li data-value=559>559</li>
 			                </ul>
 		                </div>
 		                <button type='submit'>新增</button>
@@ -208,7 +212,7 @@
 		    			<input type="text" value="" />
 		    			<img src="img/addlitter.png" align="center" class="cright">
 		    			<span class="c4Videodel1">袁子弹
-		    			    <a class="c4Videodelimg1" href="#" ><img src="img/delete2.png"></a>
+		    			     <a class="c4Videodelimg1" href="#"><img src="img/delete2.png"> </a>
 		    			</span>
 		    		</fieldset>
 		    		<fieldset class="c2three">
@@ -216,7 +220,7 @@
 		    			<input type="text" value="" />
 		    			<img src="img/addlitter.png" align="center" class="cright">
 		    			<span class="c4Videodel2">候鸿亮
-		    			    <img src="img/delete2.png">
+		    			     <a class="c4Videodelimg2" href="#"><img src="img/delete2.png"> </a>
 		    			</span>
 		    		</fieldset>
 		    		<fieldset class="c2three">
@@ -224,10 +228,10 @@
 		    			<input type="text" value="" />
 		    			<img src="img/addlitter.png" align="center" class="cright">
 		    			<span class="c4Videodel3">孔笙
-		    			    <img src="img/delete2.png" class="cright">
+		    			     <a class="c4Videodelimg3" href="#"><img src="img/delete2.png"> </a>
 		    			</span>
 		    			<span class="c4Videodel4">简川訸
-		    			    <img src="img/delete2.png">
+		    			     <a class="c4Videodelimg4" href="#"><img src="img/delete2.png"> </a>
 		    			</span>
 		    		</fieldset>
 		    		<fieldset class="c2three">
@@ -235,23 +239,19 @@
 		    			<input type="text" value="" />
 		    			<img src="img/addlitter.png" align="center" class="cright">
 		    			<span class="c4Videodel5">刘涛
-		    			    <img src="img/delete2.png" class="cright">
+		    			     <a class="c4Videodelimg5" href="#"><img src="img/delete2.png"> </a>
 		    			</span>
-		    			<span class="c4Videodel6">蒋欣
-		    			    <img src="img/delete2.png" class="cright">
+		    			<span class="c4Videodel6">王子文
+		    			     <a class="c4Videodelimg6" href="#"><img src="img/delete2.png"> </a>
 		    			</span>
-		    			<span class="c4Videodel7">王子文
-		    			    <img src="img/delete2.png" class="cright">
+		    			<span class="c4Videodel7">杨紫
+		    			     <a class="c4Videodelimg7" href="#"><img src="img/delete2.png"> </a>
 		    			</span>
+		    			<span class="c4Videodel8">乔欣
+		    			     <a class="c4Videodelimg8" href="#"><img src="img/delete2.png"> </a>
 		    			</span>
-		    			<span class="c4Videodel8">杨紫
-		    			    <img src="img/delete2.png" class="cright">
-		    			</span>
-		    			<span class="c4Videodel9">乔欣
-		    			    <img src="img/delete2.png" class="cright">
-		    			</span>
-		    			<span class="c4Videodel10">祖峰
-		    			    <img src="img/delete2.png" class="cright">
+		    			<span class="c4Videodel9">祖峰
+		    			     <a class="c4Videodelimg9" href="#"><img src="img/delete2.png"> </a>
 		    			</span>
 		    		</fieldset>
 		    		<fieldset class="c2four">
@@ -268,15 +268,15 @@
 				                <li class="search" style="border: 1px solid #EEEEEE;">
 					                <input type="text" value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
 				                </li>   <!-- 过滤输入的列表， -->
-				                <li>更新中</li>
-				                <li>更新中112</li>
-				                <li>更新中223</li>
-				                <li>更新中224</li>
-				                <li>更新中335</li>
-				                <li>更新中336</li>
-				                <li>更新中447</li>
-				                <li>更新中</li>
-				                <li>更新中559</li>
+				                 <li data-value=更新中>更新中</li>
+				                <li data-value=112>112</li>
+				                <li data-value=223>223</li>
+				                <li data-value=224>224</li>
+				                <li data-value=335>335</li>
+				                <li data-value=36>336</li>
+				                <li data-value=447>447</li>
+				                <li data-value=448>448</li>
+				                <li data-value=559>559</li>
 			                </ul>
 		                </div>
 		    		</fieldset>
@@ -542,15 +542,15 @@
 				            <li class="search" style="border: 1px solid #EEEEEE;">
 					            <input type="text" value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
 				            </li>   <!-- 过滤输入的列表， -->
-				            <li>中国</li>
-				            <li>中国112</li>
-				            <li>中国223</li>
-				            <li>中国224</li>
-				            <li>中国335</li>
-				            <li>中国336</li>
-				            <li>中国447</li>
-				            <li>中国448</li>
-				            <li>中国559</li>
+				            <li data-value=中国>中国</li>
+				            <li data-value=112>112</li>
+				            <li data-value=223>223</li>
+				            <li data-value=224>224</li>
+				            <li data-value=335>335</li>
+				            <li data-value=36>336</li>
+				            <li data-value=447>447</li>
+				            <li data-value=448>448</li>
+				            <li data-value=559>559</li>
 			            </ul>
 		            </div>
 		            <button type='submit'>新增</button>
@@ -563,15 +563,15 @@
 				            <li class="search" style="border: 1px solid #EEEEEE;">
 					            <input type="text" value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
 				            </li>   <!-- 过滤输入的列表， -->
-				            <li>都市言情</li>
-				            <li>都市言情112</li>
-				            <li>都市言情223</li>
-				            <li>都市言情224</li>
-				            <li>都市言情335</li>
-				            <li>都市言情336</li>
-				            <li>都市言情447</li>
-				            <li>都市言情48</li>
-				            <li>都市言情559</li>
+				            <li data-value=都市言情>都市言情</li>
+				            <li data-value=112>112</li>
+				            <li data-value=223>223</li>
+				            <li data-value=224>224</li>
+				            <li data-value=335>335</li>
+				            <li data-value=36>336</li>
+				            <li data-value=447>447</li>
+				            <li data-value=448>448</li>
+				            <li data-value=559>559</li>
 			            </ul>
 		            </div>
 		            <button type='submit'>新增</button>
@@ -670,25 +670,60 @@
 				        </fieldset>
 				        <fieldset>
 					                      详细地址
-					        <select name="省级" id="">
-					            <option value="">广东省</option>
-					            <option value="">江西省</option>
-					            <option value="">河南省</option>
-					            <option value="">湖南省</option>
-					        </select>
-					        <select name="市级" id="">
-					            <option value="">广州市</option>
-					            <option value="">佛山市</option>
-					            <option value="">惠州市</option>
-					            <option value="">深圳市</option>
-					        </select>
-					        <select name="区级" id="">
-					            <option value="">白云区</option>
-					            <option value="">荔湾区</option>
-					            <option value="">天河区</option>
-					            <option value="">海珠区</option>
-					        </select>
-					        <input type="text"  value="**街**路**号" onfocus="javascript:if(this.value=='**街**路**号')this.value='';"/>
+					        <span class="dropdown padleft5px" >  <!-- 模拟 select 的标记， -->
+			                        <input class="editor" type="text" value="广东省" onfocus="javascript:if(this.value=='广东省')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                        <ul>   <!-- 列表菜单 -->
+				                        <li class="search" style="border: 1px solid #EEEEEE;">
+					                        <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                        </li>   <!-- 过滤输入的列表， -->
+				                        <li data-value=广东省>广东省</li>
+				                        <li data-value=112>112</li>
+				                        <li data-value=223>223</li>
+				                        <li data-value=335>335</li>
+				                        <li data-value=224>224</li>
+				                        <li data-value=336>336</li>
+				                        <li data-value=447>447</li>
+				                        <li data-value=448>448</li>
+				                        <li data-value=559>559</li>
+			                        </ul>
+		                        </span>
+                                <span class="dropdown padleft5px" >  <!-- 模拟 select 的标记， -->
+			                        <input class="editor" type="text" value="广州市" onfocus="javascript:if(this.value=='广州市')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                        <ul>   <!-- 列表菜单 -->
+				                        <li class="search" style="border: 1px solid #EEEEEE;">
+					                        <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                        </li>   <!-- 过滤输入的列表， -->
+				                        <li data-value=广州市>广州市</li>
+				                        <li data-value=112>112</li>
+				                        <li data-value=223>223</li>
+				                        <li data-value=335>335</li>
+				                        <li data-value=224>224</li>
+				                        <li data-value=336>336</li>
+				                        <li data-value=447>447</li>
+				                        <li data-value=448>448</li>
+				                        <li data-value=559>559</li>
+			                        </ul>
+		                        </span>
+                                <span class="dropdown padleft5px" >  <!-- 模拟 select 的标记， -->
+			                        <input class="editor" type="text" value="白云区" onfocus="javascript:if(this.value=='白云区')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                        <ul>   <!-- 列表菜单 -->
+				                        <li class="search" style="border: 1px solid #EEEEEE;">
+					                        <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                        </li>   <!-- 过滤输入的列表， -->
+				                        <li data-value=白云区>白云区</li>
+				                        <li data-value=112>112</li>
+				                        <li data-value=223>223</li>
+				                        <li data-value=335>335</li>
+				                        <li data-value=224>224</li>
+				                        <li data-value=336>336</li>
+				                        <li data-value=447>447</li>
+				                        <li data-value=448>448</li>
+				                        <li data-value=559>559</li>
+			                        </ul>
+		                        </span>
 					        <input type="text"  value="**建筑**层**房" onfocus="javascript:if(this.value=='**建筑**层**房')this.value='';"/>
 					                      地图未标注<span>*</span><img src="img/map.png" alt="地图标注">
 				        </fieldset>
@@ -923,12 +958,24 @@
                                 <input type="checkbox" checked="checked">软信币
                                 <input type="checkbox" checked="checked">美元
                                 <input type="checkbox" checked="checked">其他
-                                <select name="区级" id="">
-				                    <option value="">欧元</option>
-				                    <option value="">日元</option>
-				                    <option value="">港币</option>
-				                    <option value="">泰铢</option>
-			                    </select>
+                                <span class="dropdown padleft5px" style="z-index: 10000;">  <!-- 模拟 select 的标记， -->
+			                        <input class="editor" type="text" value="欧元" onfocus="javascript:if(this.value=='欧元')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                        <ul>   <!-- 列表菜单 -->
+				                        <li class="search" style="border: 1px solid #EEEEEE;">
+					                        <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                        </li>   <!-- 过滤输入的列表， -->
+				                        <li data-value=欧元>欧元</li>
+				                        <li data-value=112>112</li>
+				                        <li data-value=223>223</li>
+				                        <li data-value=335>335</li>
+				                        <li data-value=224>224</li>
+				                        <li data-value=336>336</li>
+				                        <li data-value=447>447</li>
+				                        <li data-value=448>448</li>
+				                        <li data-value=559>559</li>
+			                        </ul>
+		                        </span>
 			                </div>
 			                <div class="cx3_do">
 				                <span>软信币抵扣比例</span>

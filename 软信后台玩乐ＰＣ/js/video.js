@@ -38,7 +38,7 @@ $(document).ready(function(){
 
 //con2中删除项
 $(document).ready(function(){
-	$(".c4Videodelimg1").click(function(){
+	$(".c4Videodel1").click(function(){
 		$(".c4Videodel1").hide();
 	});
 });

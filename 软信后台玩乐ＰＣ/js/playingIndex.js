@@ -52,11 +52,22 @@
 					p.append(fragment);  //将临时容器添加到无序列表里面，一次添加效率高
 				});
 			});
+//$(document).ready(function(){
+//  $(".dropdown ul li").click(function(){
+//		var droli=$(".dropdown ul li:hover").text();
+////		alert(droli);
+//		$(".cs2one").val(droli);
+//	});
+//});
+
+//con1中类目选择：下拉框的值追加到cs3left后面
 $(document).ready(function(){
-    $(".dropdown ul li").click(function(){
-		var droli=$(".dropdown ul li:hover").text();
-//		alert(droli);
-		$(".cs2one").val(droli);
+	$(".c1Playinginput").click(function(){
+		var cx1=$(".cs2one").val();
+		var cx2=$(".cs2two").val(); 
+		var cx3=$(".cs2three").val();
+		$('.csPlayingleft').html('');
+		$(".csPlayingleft").append(cx1+">"+cx2+">"+cx3);//将下拉框的值追加到cs3left后面
 	});
 });
 
@@ -201,4 +212,49 @@ document.getElementById("cx18").style.display="block";
 }
 
 
-
+//删除项
+$(document).ready(function(){
+	$(".c4Videodelimg1").click(function(){
+		$(".c4Videodel1").hide();
+	});
+});
+$(document).ready(function(){
+	$(".c4Videodelimg2").click(function(){
+		$(".c4Videodel2").hide();
+	});
+});
+$(document).ready(function(){
+	$(".c4Videodelimg3").click(function(){
+		$(".c4Videodel3").hide();
+	});
+});
+$(document).ready(function(){
+	$(".c4Videodelimg4").click(function(){
+		$(".c4Videodel4").hide();
+	});
+});
+$(document).ready(function(){
+	$(".c4Videodelimg5").click(function(){
+		$(".c4Videodel5").hide();
+	});
+});
+$(document).ready(function(){
+	$(".c4Videodelimg6").click(function(){
+		$(".c4Videodel6").hide();
+	});
+});
+$(document).ready(function(){
+	$(".c4Videodelimg7").click(function(){
+		$(".c4Videodel7").hide();
+	});
+});
+$(document).ready(function(){
+	$(".c4Videodelimg8").click(function(){
+		$(".c4Videodel8").hide();
+	});
+});
+$(document).ready(function(){
+	$(".c4Videodelimg9").click(function(){
+		$(".c4Videodel9").hide();
+	});
+});

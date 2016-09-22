@@ -496,6 +496,13 @@ body{
 .c1seven table tr td{
 	text-align: center;
 }
+/*下拉框的值追加到cs3left后面*/
+.csPlayingleft{
+	margin-left: 25px;
+	padding: 0 10px 0 0;
+	color: #fc6700;
+}
+
 /*con2开始*/
 .c2one,
 .c2one p,
