@@ -5,6 +5,7 @@
 		<title>软信玩乐-APP</title>
 		<script type="text/javascript" src="js/jquery-1.7.2.min.js" ></script>
 		<script type="text/javascript" src="js/playingIndex.js" ></script>
+		<script type="text/javascript" src="laydate/laydate.js" ></script>   <!--时间日历-->
 		<link rel="stylesheet" href="css/genericCss.css" />
 		<link rel="stylesheet" href="css/playingIndex.css" />
 	</head>
@@ -417,13 +418,17 @@
 		        <div class="cx2" id="cx17">
 			        <form action="" method="">
 				        <fieldset>
-					                     预约时间   <input type="date" name="star_date" /> 至 
-					        <input type="date" name="stop_date" />
+					                预约时间
+					        <input id="Time1" placeholder="请输入预约开始时间" class="laydate-icon" onClick="laydate({elem: '#Time1', istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
+					        至 
+					        <input id="Time2" placeholder="请输入预约结束时间" class="laydate-icon" onClick="laydate({elem: '#Time2', istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
 					                      预约：最长15天
 				        </fieldset>
 				        <fieldset>
-					                      拍卖时间   <input type="date" name="star_date" /> 至 
-					        <input type="date" name="stop_date" />
+					                      拍卖时间
+					        <input id="Time3" placeholder="请输入拍卖开始时间" class="laydate-icon" onClick="laydate({elem: '#Time3', istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
+					        至 
+					        <input id="Time4" placeholder="请输入拍卖结束时间" class="laydate-icon" onClick="laydate({elem: '#Time4', istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
 					                      拍卖：最长30分钟
 				        </fieldset>
 				        <fieldset>
@@ -662,13 +667,13 @@
 				        </fieldset>
 				        <fieldset class="cx2Fieinput">
 					        <span class="cx2Lspan">发货日期</span>
-					        <input type="date" />
+					        <input id="Time5" placeholder="请输入发货日期" class="laydate-icon" onClick="laydate({elem: '#Time5', istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
 					        <span class="cx2Rspan">撤单日期</span>
-					        <input type="date" />
+					        <input id="Time6" placeholder="请输入撤单日期" class="laydate-icon" onClick="laydate({elem: '#Time6', istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
 				        </fieldset>
 				        <fieldset class="cx2Fieinput">
 					        <span class="cx2Lspan">余款期限</span>
-					        <input type="date" />
+					        <input id="Time7" placeholder="请输入余款期限" class="laydate-icon" onClick="laydate({elem: '#Time7', istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
 					        <span class="cx2Rspan">未收到余款，则</span>
 					        <label><input name="未收到余款" type="radio" value="" />撤销订单
 					        <label><input name="未收到余款" type="radio" value="" />转为到付
